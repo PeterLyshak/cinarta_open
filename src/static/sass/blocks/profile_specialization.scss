@@ -1,0 +1,217 @@
+.profile-specialization .subscription__menu-block {
+	margin-bottom: 60px;
+}
+
+.profile-specialization .create-casting__container {
+	margin-top: 0;
+	margin-bottom: 60px;
+}
+
+.profile-specialization .create-casting__form-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.profile-specialization .profile__title {
+	margin-bottom: 20px;
+}
+
+.profile-specialization .create-casting__form {
+	width: 777px;
+}
+
+.profile-specialization .create-casting__form-right-part {
+	width: 40px;
+}
+
+.profile-specialization__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.profile-specialization__wrapper {
+	display: block;
+}
+
+.profile-specialization__left-part,
+.profile-specialization__right-part {
+	width: 366px;
+}
+
+.profile-specialization input[type="checkbox"],
+.profile-add-options input[type="checkbox"],
+.profile-notifications input[type="checkbox"] {
+	display: none;
+}
+
+.profile-specialization input[type="checkbox"] + label,
+.profile-add-options input[type="checkbox"] + label,
+.profile-notifications input[type="checkbox"] + label {
+	cursor: pointer;
+	padding-left: 50px;
+	position: relative;
+	font-family: Muller, sans-serif;
+	line-height: 40px;
+}
+
+.profile-specialization input[type="checkbox"] + label::before,
+.profile-add-options input[type="checkbox"] + label::before,
+.profile-notifications input[type="checkbox"] + label::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	vertical-align: middle;
+	padding: 0;
+	height: 19px;
+	width: 40px;
+	margin: 0 5px 0 0;
+	background: #FFFFFF;
+	border: 1px solid #EAEAEA;
+	border-radius: 39px;
+}
+
+.profile-specialization input[type="checkbox"] + label::after,
+.profile-add-options input[type="checkbox"] + label::after,
+.profile-notifications input[type="checkbox"] + label::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	width: 19px;
+	height: 19px;
+	border-radius: 19px;
+	background: #FFFFFF;
+	border: 1px solid #FBFBFB;
+	box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.212947);
+}
+
+.profile-specialization input[type="checkbox"] + label::before,
+.profile-specialization input[type="checkbox"] + label::after,
+.profile-add-options input[type="checkbox"] + label::before,
+.profile-add-options input[type="checkbox"] + label::after,
+.profile-notifications input[type="checkbox"] + label::before,
+.profile-notifications input[type="checkbox"] + label::after {
+	transition: all .2s ease-out;
+}
+
+.profile-specialization input[type="checkbox"]:checked + label::before,
+.profile-add-options input[type="checkbox"]:checked + label::before,
+.profile-notifications input[type="checkbox"]:checked + label::before {
+	background: #FEE98F;
+	border: 1px solid #EAEAEA;
+}
+
+.profile-specialization input[type="checkbox"]:checked + label::after,
+.profile-add-options input[type="checkbox"]:checked + label::after,
+.profile-notifications input[type="checkbox"]:checked + label::after {
+	left: 20px;
+}
+
+.profile-specialization input[type=checkbox]:checked+label, 
+.profile-specialization input[type=checkbox]:not(:checked)+label,
+.profile-add-options input[type=checkbox]:checked+label, 
+.profile-add-options input[type=checkbox]:not(:checked)+label,
+.profile-notifications input[type=checkbox]:checked+label, 
+.profile-notifications input[type=checkbox]:not(:checked)+label {
+	margin-left: 0;
+}
+
+.profile-specialization input[type=checkbox]:not(:checked)+label::after,
+.profile-add-options input[type=checkbox]:not(:checked)+label::after,
+.profile-notifications input[type=checkbox]:not(:checked)+label::after {
+	opacity: 1;
+}
+
+.profile-specialization__text {
+	display: block;
+	line-height: 26px;
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.profile-specialization .button--create-casting {
+	width: 215px;
+}
+
+@media screen and (max-width: 767px) {
+	.profile-specialization .create-casting__container {
+		margin-bottom: 30px;
+	}
+	.profile-specialization .create-casting__form-search-part {
+		display: flex;
+		justify-content: center;
+	}
+	.profile-specialization .profile__title {
+		font-size: 28px;
+		line-height: 36px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	.profile-specialization__text {
+		font-size: 18px;
+	}
+	.profile-specialization .subscription__menu-block {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.profile-specialization .button--main {
+		padding: 20px 0;
+		margin-top: 20px;
+	}
+	.profile-specialization .create-casting__form, .profile-specialization__left-part, .profile-specialization__right-part {
+		width: 100%;
+	}
+	.profile-specialization__container {
+		width: 250px;
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.profile-specialization .create-casting__form-row {
+		flex-direction: row;
+	}
+	.profile-specialization .create-casting__form-search-row {
+		flex-direction: column;
+	}
+	.profile-specialization .button--create-casting {
+		margin: 0 auto;
+	}
+	.profile-specialization__text {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.profile-specialization .create-casting__form {
+		width: 100%;
+	}
+	.profile-specialization__container {
+		margin-bottom: 40px;
+	}
+	.profile-specialization__left-part, .profile-specialization__right-part {
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.profile-specialization .create-casting__container {
+		justify-content: space-between;
+	}
+	.profile-specialization .create-casting__form {
+		width: calc(100% - 300px);
+	}
+	.profile-specialization__right-part {
+		padding-right: 40px;
+	}
+}

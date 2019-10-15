@@ -1,0 +1,320 @@
+.create-casting-new {
+	padding-bottom: 60px;
+	h1 {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	&__tabs-content-wrap {
+		padding-bottom: 100px;
+	}
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	&__photo-block {
+		width: 410px;
+		margin-right: 100px;
+	}
+	&__photo {
+		width: 410px;
+		height: 377px;
+	}
+	&__photo img {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		backface-visibility: hidden;
+		object-fit: cover;
+	}
+	.button--create-casting {
+		width: 100%;
+		height: 50px;
+	}
+	&__title {
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: 400;
+		color: #353535;
+		margin: 0;
+		margin-bottom: 40px;
+	}
+	&__form-row {
+		width: 614px;
+		margin-bottom: 20px;
+	}
+	&__left-part {
+		width: 160px;
+		padding-top: 15px;
+	}
+	&__right-part {
+		width: 402px;
+	}
+	&__form-row label .star {
+		color: #E81919;
+	}
+	&__form-row, .selects-range-row-top, .selects-range-row-bottom, .selects-range-row-next, .input-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.selects-range-row-top .select-wrapper {
+		width: 130px;
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+		&:nth-child(1) {
+			width: 62px;
+		}
+	}
+	.selects-range-row-bottom .select-wrapper {
+		width: 84px;
+		&:nth-child(1) {
+			margin-right: 50px;
+		}
+		&:nth-child(2) {
+			margin-right: 22px;
+		}
+	}
+	.selects-range-row-next .select-wrapper {
+		width: 84px;
+		&:nth-child(1) {
+			margin-right: 80px;
+		}
+		&:nth-child(2) {
+			position: relative;
+			margin-right: 70px;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 30px;
+				right: -38px;
+				width: 8px;
+				height: 2px;
+				background-color: #7D8191;
+			}
+		}
+	}
+	.select-wrapper, .input-wrapper {
+		width: 402px;
+	}
+	.create-casting__checkbox {
+		display: flex;
+		width: 162px;
+		margin-left: 0;
+		padding: 0;
+	}
+	.form-input.price {
+		margin-right: 0;
+	}
+	input[type=checkbox]:checked+label, input[type=checkbox]:not(:checked)+label {
+		margin-left: 0;
+	}
+	&__heading {
+		position: relative;
+	}
+	&__arrow-left, &__arrow-right {
+		position: relative;
+		text-decoration: none;
+		display: block;
+		width: 58px;
+		height: 58px;
+		background-color: #FEE98F;
+		border-radius: 50%;
+	}
+	&__arrow-left {
+		left: -280px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: 22px;
+			width: 10px;
+			height: 21px;
+			transform: rotate(180deg);
+			background-image: url('../img/next.svg');
+			background-repeat: no-repeat;
+		}
+	}
+	&__arrow-right {
+		right: -320px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 18px;
+			left: 24px;
+			width: 10px;
+			height: 21px;
+			background-image: url('../img/next.svg');
+			background-repeat: no-repeat;
+		}
+	}
+	&__heading-next, &__heading-next .create-casting-new__form-row {
+		width: 100%;
+		position: relative;
+	}
+	&__heading-next &__left-part {
+		width: 200px;
+		padding-top: 0;
+	}
+	&__heading-next &__right-part {
+		width: 942px;
+	}
+	&__heading-next .button--create-casting {
+		display: block;
+		margin-top: 0;
+		margin: 0 auto;
+		width: 436px;
+		height: 50px;
+		padding: 0;
+	}
+	.form-textarea {
+		width: 942px;
+		height: 100px;
+		border: 1px solid #D1D4DD;
+		padding: 15px 30px;
+		resize: vertical;
+		&::placeholder {
+			font-size: 16px;
+			line-height: 19px;
+			font-weight: 400;
+			color: rgba(125, 129, 145, 0.8);
+		}
+	}
+	&__tab-content {
+		display: none;
+	}
+	&__tab-content.active {
+		display: block;
+	}
+	&__switches {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 -10px 20px 0 rgba(0,0,0,0.07);
+	}
+	&__switches-container {
+		display: flex;
+		height: 80px;
+		justify-content: center;
+		align-items: center;
+	}
+	&__switches ul {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__switches ul li {
+		margin: 0 10px;
+	}
+	&__switches ul li.active .link-switch {
+		background-color: #D1D1D1;
+	}
+	.link-switch {
+		display: block;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background-color: rgba(209, 209, 209, 0.372951);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.create-casting-new {
+		padding-bottom: 30px;
+		h1 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		&__tabs-content-wrap {
+			padding-bottom: 60px;
+		}
+		&__container, &__form-row, .selects-range-row-top, .selects-range-row-bottom, .selects-range-row-next, .input-wrapper {
+			flex-direction: column;
+		}
+		&__container, &__photo-block, .selects-range-row-top .select-wrapper, .selects-range-row-bottom .select-wrapper, .selects-range-row-next .select-wrapper, .form-input.price, &__heading-next &__left-part {
+			margin-bottom: 20px;
+		}
+		&__photo-block, &__photo, &__form-row, .selects-range-row-top .select-wrapper, .selects-range-row-bottom .select-wrapper, .select-wrapper, .input-wrapper, .selects-range-row-next .select-wrapper, &__heading-next .form-textarea, &__heading-next .button--create-casting, &__left-part, &__right-part {
+			width: 100%;
+		}
+		&__photo {
+			height: 200px;
+		}
+		.selects-range-row-top .select-wrapper {
+			&:nth-child(1) {
+				width: 100%;
+			}
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+		}
+		.selects-range-row-next .select-wrapper:nth-child(2)::after {
+			display: none;
+		}
+		&__switches ul li {
+			margin: 0 5px;
+		}
+		.link-switch {
+			width: 15px;
+			height: 15px;
+		}
+		&__arrow-left, &__arrow-right {
+			width: 40px;
+			height: 40px;
+			&::before {
+				top: 10px;
+			}
+		}
+		&__arrow-left {
+			left: -20px;
+			&::before {
+				left: 13px;
+			}
+		}
+		&__arrow-right {
+			right: -20px;
+			&::before {
+				left: 16px;
+			}
+		}
+		&__heading-next &__left-part {
+			width: 100%;
+		}
+		&__heading-next &__right-part {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.create-casting-new {
+		&__container {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__photo-block {
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+		&__arrow-left {
+			top: auto;
+			left: -90px;
+		}
+		&__arrow-right {
+			top: auto;
+			right: -90px;
+		}
+		&__heading-next &__right-part {
+			width: 500px;
+		}
+		.form-textarea {
+			width: 500px;
+		}
+	}
+}

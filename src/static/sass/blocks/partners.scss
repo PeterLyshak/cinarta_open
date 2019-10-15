@@ -1,0 +1,163 @@
+.partners h1 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.partners__list {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 60px;
+}
+
+.partner__block {
+	text-decoration: none;
+	position: relative;
+	display: flex;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.partner__block-photo {
+	position: relative;
+	width: 100%;
+	height: 455px;
+}
+
+.partners__block-small .partner__block-photo {
+	height: 348px;
+}
+
+.partners__block-small .partner__article {
+	margin-bottom: 78px;
+	color: #fff;
+}
+
+.partner__block-body {
+	position: absolute;
+	top: 74px;
+	left: 88px;
+}
+
+.partner__block-photo img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	backface-visibility: hidden;
+	object-fit: cover;
+	overflow-x: hidden;
+}
+
+.partner__name {
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	margin-bottom: 18px;
+}
+
+.partners .page__article {
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 43px;
+	br {
+		display: none;
+	}
+}
+
+.partner__description {
+	line-height: 26px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+	width: 448px;
+	margin: 0;
+	margin-bottom: 58px;
+}
+
+@media screen and (max-width: 767px) {
+	.partners h1 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.partners__list {
+		margin-bottom: 30px;
+	}
+	.partner__block {
+		margin-bottom: 20px;
+	}
+	.partner__block-body {
+		top: 40px;
+		left: 20px;
+	}
+	.partner__block-photo {
+		height: 400px;
+	}
+	.partner__block-body .page__article {
+		margin-top: 0;
+		font-size: 28px;
+		line-height: 36px;
+	}
+	.partners .page__article {
+		margin-bottom: 20px;
+		br {
+			display: block;
+		}
+	}
+	.partner__description {
+		width: 100%;
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.partners__list {
+		align-items: center;
+	}
+	.partner__block {
+		width: 80%;
+	}
+	.partners .page__article {
+		margin-bottom: 20px;
+	}
+	.partner__description {
+		margin-bottom: 20px;
+	}
+	.partner__block-photo {
+		height: 320px;
+	}
+	.partner__block-body {
+		top: 50px;
+		left: 50px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.partners__list {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.partner__block {
+		width: 49%;
+		&:not(:nth-child(2n)) {
+			margin-right: 1%;
+		}
+	}
+	.partner__block-body {
+		top: 50px;
+		left: 50px;
+	}
+	.partners .page__article {
+		margin-bottom: 20px;
+	}
+	.partner__description {
+		margin-bottom: 20px;
+	}
+	.partner__block-photo, .partners__block-small .partner__block-photo {
+		height: 320px;
+	}
+}

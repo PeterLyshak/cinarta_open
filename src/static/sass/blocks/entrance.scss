@@ -1,0 +1,91 @@
+.entrance-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.entrance h1 {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.entrance-form {
+	display: flex;
+	flex-direction: column;
+	width: 326px;
+}
+
+.entrance-form__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.entrance__label {
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #727171;
+	width: 100%;
+}
+
+.entrance--terms {
+	text-decoration: underline;
+	color: rgba(28, 73, 126, 0.9);
+}
+
+.entrance--info {
+	margin-top: 12px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	color: #727171;
+}
+
+.entrance input[type=checkbox]:checked+label, 
+.entrance input[type=checkbox]:not(:checked)+label {
+	margin-left: 0;
+}
+
+.entrance input[type=checkbox]:checked+label::before, 
+.entrance input[type=checkbox]:not(:checked)+label::before {
+	width: 14px;
+	height: 15px;
+	border-radius: 4px;
+	padding: 0 7px;
+	background-color: #3bb4d3;
+	border: 0;
+}
+
+.entrance input[type=checkbox]:checked+label::after, 
+.entrance input[type=checkbox]:not(:checked)+label::after {
+	background-image: url('../img/entrance-checked.svg');
+	background-size: 6px 5px;
+	top: 4px;
+	left: 2px;
+}
+
+.entrance--link {
+	margin-left: 22px;
+}
+
+@media screen and (max-width: 767px) {
+	.entrance h1 {
+		font-size: 32px;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.entrance-container {
+		margin-bottom: 30px;
+	}
+	.entrance-form {
+		width: 100%;
+	}
+	.entrance-form__wrapper {
+		margin-bottom: 30px;
+	}
+}

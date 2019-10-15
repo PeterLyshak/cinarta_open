@@ -1,0 +1,189 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="theme-color" content="#ff9800")
+		meta(name="msapplication-navbutton-color" content="#ff9800")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="apple-touch-fullscreen" content="yes")
+		link(rel="icon" type="image/x-icon" sizes="16x16" href="#")
+		link(rel="icon" type="image/x-icon" sizes="32x32" href="#")
+		link(rel="icon" type="image/png" sizes="50x50" href="#")
+		link(rel="icon" type="image/png" sizes="60x60" href="#")
+		link(rel="icon" type="image/png" sizes="72x72" href="#")
+		link(rel="icon" type="image/png" sizes="76x76" href="#")
+		link(rel="icon" type="image/png" sizes="114x114" href="#")
+		link(rel="icon" type="image/png" sizes="120x120" href="#")
+		link(rel="icon" type="image/png" sizes="144x144" href="#")
+		link(rel="icon" type="image/png" sizes="152x152" href="#")
+		meta(name="format-detection" content="telephone=no")
+		title Cinarta
+		link(rel="stylesheet" href="static/css/main.css")
+	body
+		svg(style="display:none")
+			symbol(id="caret-select" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg")
+				path(d="M11.7772 0.230869C11.6289 0.0769137 11.4531 0 11.2499 0H0.750056C0.546802 0 0.371088 0.0769137 0.222628 0.230869C0.0741683 0.384994 0 0.567212 0 0.777863C0 0.988471 0.0741683 1.17069 0.222628 1.32469L5.47257 6.76896C5.6212 6.92292 5.79691 7 6 7C6.20309 7 6.37897 6.92292 6.52731 6.76896L11.7772 1.32464C11.9255 1.17069 12 0.988471 12 0.77782C12 0.567212 11.9255 0.384994 11.7772 0.230869Z")
+			symbol(id="apple" width="19" height="23")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.974 0c.158 1.27-.423 2.542-1.284 3.459-.862.915-2.275 1.627-3.66 1.533-.187-1.244.512-2.54 1.31-3.352C11.23.725 12.735.044 13.975 0zm4.398 8.247c-.24.142-2.532 1.505-2.503 4.255.03 3.315 2.965 4.466 3.125 4.529l.006.002a2.286 2.286 0 0 0-.008.024c-.07.214-.541 1.665-1.608 3.162-.973 1.365-1.98 2.723-3.57 2.751-.765.014-1.275-.198-1.806-.418-.556-.231-1.133-.471-2.047-.471-.957 0-1.562.247-2.145.485-.504.207-.992.406-1.677.433-1.535.054-2.703-1.474-3.683-2.835C.45 17.384-1.081 12.306.976 8.878c1.02-1.702 2.847-2.78 4.827-2.808.855-.015 1.682.3 2.406.576.553.21 1.046.399 1.444.399.359 0 .839-.182 1.398-.394.881-.333 1.96-.741 3.07-.633.761.03 2.896.294 4.267 2.22a2.71 2.71 0 0 1-.017.01z" fill="#fff")
+			symbol(id="android" width="21" height="24")
+				path(d="M1.531 8h-.063C.659 8 0 8.638 0 9.416v6.167C0 16.363.66 17 1.468 17h.064C2.341 17 3 16.362 3 15.583V9.416C2.999 8.638 2.339 8 1.531 8zM4 17.869c0 .726.58 1.317 1.29 1.317h1.378v3.376c0 .793.632 1.438 1.403 1.438h.06c.775 0 1.406-.646 1.406-1.438v-3.376h1.926v3.376c0 .793.634 1.438 1.405 1.438h.06c.774 0 1.404-.646 1.404-1.438v-3.376h1.38c.708 0 1.288-.591 1.288-1.317V8H4v9.869z" fill="#fff")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.715 1.961L14.802.344a.217.217 0 0 0-.067-.307.234.234 0 0 0-.32.065l-1.127 1.673a7.595 7.595 0 0 0-2.788-.522c-.998 0-1.941.188-2.789.522L6.586.102a.237.237 0 0 0-.321-.065.218.218 0 0 0-.068.307l1.088 1.617C5.323 2.887 4 4.633 4 6.635A4 4 0 0 0 4.019 7h12.963c.011-.12.018-.241.018-.365 0-2.002-1.324-3.748-3.285-4.674zm-6.22 2.895a.612.612 0 0 1-.624-.6c0-.333.28-.6.624-.6a.61.61 0 0 1 .624.6c0 .333-.28.6-.624.6zm5.385-.6c0 .333.28.6.624.6a.61.61 0 0 0 .623-.6.61.61 0 0 0-.623-.6.611.611 0 0 0-.624.6z" fill="#fff")
+				path(d="M19.531 8h-.061C18.661 8 18 8.638 18 9.416v6.167c0 .78.663 1.417 1.47 1.417h.062c.81 0 1.468-.638 1.468-1.417V9.416C21 8.638 20.34 8 19.531 8z" fill="#fff")
+			symbol(id="bubble" width="18" height="18")
+				path(d="M16.795 3.732C15.99 2.58 14.9 1.67 13.52 1.002 12.141.334 10.634 0 9 0 7.781 0 6.616.197 5.505.592c-1.112.394-2.07.927-2.873 1.599A7.65 7.65 0 0 0 .713 4.587 6.289 6.289 0 0 0 0 7.499C0 8.67.303 9.768.909 10.79c.606 1.023 1.435 1.883 2.486 2.578-.074.312-.16.61-.261.89-.1.281-.191.512-.271.692-.08.18-.19.379-.327.597a6.059 6.059 0 0 1-.311.463l-.347.445a39.981 39.981 0 0 0-.391.51l-.07.1-.061.105c-.034.059-.049.096-.045.11a.36.36 0 0 1-.02.118c-.017.063-.015.11.005.14v.012c.027.141.085.254.175.34.09.086.193.121.307.105a6.596 6.596 0 0 0 1.145-.257c1.754-.524 3.295-1.469 4.62-2.836.503.063.988.094 1.457.094 1.634 0 3.14-.334 4.52-1.002 1.38-.668 2.471-1.578 3.275-2.73C17.598 10.113 18 8.858 18 7.5c0-1.36-.402-2.615-1.205-3.767z")
+			symbol(id="base_edit" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M11.822 1.229a4.184 4.184 0 015.922 0 4.146 4.146 0 011.229 2.96c0 1.119-.437 2.17-1.229 2.962L6.886 18.006a.535.535 0 01-.768 0l-4.374-4.374-.562 4.155L4.06 17.4a.547.547 0 11.146 1.084l-3.59.485c-.025.004-.049.004-.073.004a.552.552 0 01-.384-.162.541.541 0 01-.154-.457l.805-5.958a.543.543 0 01.153-.312L11.822 1.23zm2.033 3.157l-1.823-1.823-9.908 9.908 1.823 1.824 9.908-9.909zM6.505 16.85l-1.782-1.782 9.908-9.909 1.783 1.783-9.908 9.909zM12.813 1.8l4.362 4.362a3.08 3.08 0 00.707-1.973c0-.829-.319-1.609-.905-2.19a3.089 3.089 0 00-2.191-.906c-.728 0-1.42.25-1.973.707z" fill="#0C2A4D")
+			symbol(id="base_delete" width="17" height="21" fill="none" xmlns="http://www.w3.org/2000/svg")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M11.307 2.513h3.265a2.399 2.399 0 012.396 2.396v.123c0 1.01-.628 1.874-1.514 2.226v11.32a2.4 2.4 0 01-2.396 2.397h-9.14A2.4 2.4 0 011.52 18.58V7.259A2.399 2.399 0 01.007 5.031V4.91a2.399 2.399 0 012.396-2.396h3.265A2.843 2.843 0 018.488 0c1.455 0 2.657 1.1 2.82 2.513zm-1.148 0a1.706 1.706 0 00-1.671-1.377c-.828 0-1.519.594-1.672 1.377h3.343zm4.159 16.066c0 .694-.566 1.26-1.26 1.26h-9.14c-.695 0-1.26-.566-1.26-1.26V7.429h11.66v11.15zm.254-12.287c.695 0 1.26-.565 1.26-1.26V4.91c0-.694-.565-1.26-1.26-1.26H2.402c-.694 0-1.259.566-1.259 1.26v.123c0 .695.565 1.26 1.26 1.26h12.17z" fill="#E12F2F")
+				path(d="M5.441 18.385a.568.568 0 00.568-.568V11.42a.568.568 0 00-1.136 0v6.398c0 .314.254.568.568.568zM8.488 18.385a.568.568 0 00.568-.568V11.42a.568.568 0 00-1.137 0v6.398c0 .314.255.568.569.568zM11.534 18.385a.568.568 0 00.568-.568V11.42a.568.568 0 00-1.136 0v6.398c0 .314.254.568.568.568z" fill="#E12F2F")
+		header#header.page-header
+			.wrapper
+				.page-header__row
+					.page-header__logo
+						a(href="index.html")
+							img(src="static/img/cinarta.svg", alt="Cinarta")
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="casting.html") Кастинги
+							li
+								a(href="cinema.html") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="partners.html") Партнеры
+							li
+								a(href="#") Обратная связь
+					a.page-header__toggle(href="#" data-toggle="modal" data-target="#header-menu")
+						span
+					.page-header__user-wrapper
+						a.notifications-link(href="#")
+							svg.bubble--icon(width="18" height="18")
+								use(xlink:href="#bubble")
+							span.buble-number 4
+						button.button.button--exit(type="button" data-jq-dropdown="#jq-dropdown-1")
+							.page-header__user
+								.user__photo
+									img(src="static/img/katya.png", alt="")
+								span.user__name Екатерина 
+									br
+									| Тутубалина
+								svg.exit--icon(width="12" height="7")
+									use(xlink:href="#caret-select")
+						#jq-dropdown-1.jq-dropdown.jq-dropdown-tip.jq-dropdown-relative.jq-dropdown-anchor-right
+							.jq-dropdown-menu.page-header__user-menu
+								a(href="activation.html") Подписка
+								a(href="profile_info.html") Мой профиль
+								a(href="#") Настройки
+								a(href="#") Помощь
+								a(href="#") Выйти
+			.page-header__menu.popup-block#header-menu
+				.inner__menu
+					a.page-header__toggle.close-button(href="#" data-toggle="dismiss")
+						span
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="casting.html") Кастинги
+							li
+								a(href="cinema.html") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Приложение
+							li
+								a(href="#") Обратная связь
+		.main-page-wrap
+			.main-page-blocks
+				section.base-block
+					.wrapper
+						.breadcrumbs
+							ul.page__list
+								li
+									a(href="#") Главная
+								li
+									span Моя база
+								li
+									span Управление
+						.base-block__title Моя база
+						.base-block__wrapper
+							.base-block__sidebar-block
+								ul
+									li
+										a(href="#") Управление
+									li
+										a(href="#") Просмотр
+									li
+										a(href="#") Редактировать
+									li
+										a(href="#") Менеджеры
+									li
+										a(href="#") Новости
+									li
+										a(href="#") Проекты
+									li
+										a(href="#") Удалить
+							.base-block__content-block
+								.base-block__create-block
+									.base-block__create-heading
+										.base-block__create-title Создать проект
+									.base-block__create-inner
+										.base-block__create-control-wrapper
+											.base-block__create-left-part
+												label Название 
+													span *
+											.base-block__create-right-part
+												input.form-input(type="text" placeholder="Название проекта")
+										.base-block__create-control-wrapper
+											.base-block__create-left-part
+												label Длительность карантина 
+													span *
+											.base-block__create-right-part.small
+												input.form-input(type="text" placeholder="90")
+												.base-block__create-label дней
+									.base-block__create-btn-wrapper
+										a.btn.btn--base-submit(href="javascript:;") Создать
+										a.btn.btn--base-cancel(href="javascript:;") Отменить
+
+			footer.main-footer
+				.wrapper
+					.main-footer__container
+						.main-footer__content
+							.footer__box
+								img(src="static/img/footer_cinarta.svg", alt="Логотип")
+								p.copyright__text © 2018, «Синарта» поиск исполнителей
+							.footer__box
+								span.app__title Скачать приложение
+								.apps__box
+									a.apps__link(href="#")
+										svg(width="19" height="23")
+											use(xlink:href="#apple")
+									a.apps__link(href="#")
+										svg(width="21" height="24")
+											use(xlink:href="#android")
+								a.footer__link(href="#") Пользовательськое соглашение
+								a.footer__link(href="#") Политика конфиденциальности
+						.footer__box
+							a.footer__main-link(href="#") Мой профиль
+							a.footer__link(href="entrance.html") Вход
+							a.footer__link(href="#") Вакансии
+							a.footer__link(href="#") Сообщения
+							a.footer__link(href="casting.html") Кастинги
+						.footer__box
+							a.footer__main-link(href="#") Найти исполнителя
+							a.footer__link(href="#") Создать вакансию
+							a.footer__link(href="actors_list.html") Найти актера
+							a.footer__link(href="create_casting.html") Создать кастинг
+							a.footer__link(href="cinema.html") Киносфера
+						.footer__box
+							a.footer__main-link(href="#") Сервисы
+							a.footer__link(href="#") Поиск по сайту
+							a.footer__link(href="#") Помощь
+							a.footer__link(href="#") Обратная связь
+	script(src="static/js/jquery-3.3.1.min.js")
+	script(src="static/js/plugins.js")
+	script(src="static/js/jquery.dropdown.min.js")
+	script(src="static/js/main.js")

@@ -1,0 +1,79 @@
+.jobs {
+	h1 {
+		margin-top: 20px;
+	}
+	.form-control {
+		width: 262px;
+	}
+	.form-control:not(:last-child) {
+		margin-right: 40px;
+	}
+	.casting__search {
+		position: relative;
+		padding-bottom: 60px;
+	}
+	.form-controls {
+		position: absolute;
+		top: 35px;
+		right: 35px;
+		display: flex;
+		flex-direction: column;
+	}
+	.form-controls .search--icon {
+		margin-left: 20px;
+	}
+	.my-casting__row-inner {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.jobs {
+		.casting__search {
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 110px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.form-control:not(:last-child) {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+		.form-control {
+			width: 100%;
+		}
+		.form-controls {
+			top: auto;
+			bottom: 10px;
+			right: 0;
+			left: 50px;
+		}
+		.button--main {
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.jobs {
+		.form-controls {
+			top: auto;
+			bottom: 10px;
+			right: 120px;
+		}
+		.actors-list__form-row {
+			flex-wrap: wrap;
+		}
+		.form-control {
+			width: 290px;
+		}
+		.form-control:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		.casting__search {
+			padding-bottom: 40px;
+		}
+	}
+}

@@ -1,0 +1,350 @@
+.my-casting-card {
+	&__container {
+		display: flex;
+		flex-direction: row;
+		margin-top: 40px;
+	}
+	&__photo-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 60px;
+	}
+	&__photo {
+		width: 435px;
+		height: 334px;
+	}
+	&__photo img, &__request-row-photo img, &__request-list-photo img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		backface-visibility: hidden;
+		object-fit: cover;
+	}
+	&__heading {
+		width: 100%;
+	}
+	&__heading h1 {
+		font-size: 36px;
+		line-height: 43px;
+		color: #353535;
+		margin-bottom: 40px;
+	}
+	&__heading-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 400;
+		color: #353535;
+		border-bottom: 1px solid #D2D9E3;
+		padding-bottom: 28px;
+		margin-bottom: 40px;
+	}
+	&__options-block {
+		margin-bottom: 40px;
+	}
+	&__option {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 366px;
+		font-size: 15px;
+		line-height: 18px;
+		font-weight: 400;
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__name {
+		width: 120px;
+		color: #4A4D59;
+	}
+	&__value {
+		width: 210px;
+		color: rgba(46, 47, 53, 0.8);
+	}
+	&__heading-title {
+		font-size: 15px;
+		line-height: 24px;
+		color: #4A4D59;
+	}
+	&__heading-text {
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: 400;
+		color: rgba(74, 77, 89, 0.8);
+	}
+	&__sort-list, &__request-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__sort-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__sort-list {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	&__sort-list h3 {
+		font-size: 26px;
+		line-height: 31px;
+		color: #353535;
+		margin-right: 44px;
+	}
+	&__request-row {
+		flex-wrap: wrap;
+	}
+	&__request-row-block {
+		width: 32.4%;
+		margin-bottom: 30px;
+		background-color: #fff;
+		box-shadow: 0px 12px 42px rgba(154, 163, 178, 0.247514);
+	}
+	&__request-row-heading {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 17px;
+	}
+	&__request-row-heading h3 {
+		font-size: 17px;
+		line-height: 20px;
+		color: #121314;
+	}
+	&__request-row-heading span {
+		font-size: 12px;
+		line-height: 21px;
+		font-weight: 400;
+		color: #111112;
+	}
+	&__request-row-photo {
+		width: 173px;
+		height: 158px;
+		flex-shrink: 0;
+	}
+	&__request-row-body {
+		display: flex;
+		flex-direction: column;
+		width: 207px;
+		padding: 26px;
+	}
+	&__request-option {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100px;
+	}
+	&__option-name {
+		font-size: 12px;
+		line-height: 21px;
+		font-weight: 400;
+		color: rgba(74, 77, 89, 0.89);
+	}
+	&__option-value {
+		font-size: 12px;
+		line-height: 21px;
+		font-weight: 500;
+		color: rgba(25, 26, 28, 0.89);
+	}
+	&__favorite-link {
+		position: relative;
+		font-size: 13px;
+		line-height: 21px;
+		font-weight: 400;
+		color: rgba(237, 138, 25, 0.8);
+		padding-left: 20px;
+		transition: all .3s ease-in-out;
+		&:hover {
+			color: #ed8a19;
+		}
+	}
+	&__request-row-bottom {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 34px;
+	}
+	&__request-row-bottom .button--approve {
+		margin-right: 20px;
+	}
+	&__tab-content {
+		display: none;
+	}
+	&__tab-content.active {
+		display: block;
+	}
+	&__request-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	&__request-list-block {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: #fff;
+		margin-bottom: 40px;
+		box-shadow: 0px 12px 42px rgba(154, 163, 178, 0.247514);
+	}
+	&__request-list-heading {
+		display: flex;
+		flex-direction: row;
+	}
+	&__request-list-photo {
+		width: 196px;
+		height: 222px;
+	}
+	&__request-list-body {
+		padding: 40px 0 32px 40px;
+	}
+	&__request-list-body h3 {
+		margin-bottom: 20px;
+	}
+	&__request-list-body span {
+		font-size: 12px;
+		line-height: 21px;
+		font-weight: 400;
+		color: #111112;
+	}
+	&__request-list-body, &__request-list-bottom {
+		display: flex;
+		flex-direction: column;
+	}
+	&__request-list-bottom {
+		margin-top: 40px;
+		margin-right: 40px;
+	}
+	&__request-list-bottom .button--approve {
+		margin-bottom: 28px;
+	}
+	&__request-list-option {
+		margin-bottom: 40px;
+	}
+}
+
+.card--star {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	fill: #ED8A19;
+}
+
+@media screen and (max-width: 767px) {
+	.my-casting-card {
+		&__container {
+			flex-direction: column;
+			margin-top: 20px;
+		}
+		&__heading h1 {
+			font-size: 28px;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+		&__heading-wrapper {
+			font-size: 14px;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+		&__photo-block {
+			margin-right: 0;
+			order: 2;
+		}
+		&__heading {
+			order: 1;
+		}
+		&__photo, &__request-row-block, &__request-list-block {
+			width: 100%;
+		}
+		&__option {
+			width: 100%;
+			justify-content: flex-start;
+		}
+		&__name {
+			margin-right: 20px;
+		}
+		&__value {
+			width: 120px;
+		}
+		&__sort-wrapper, &__sort-list {
+			flex-direction: column;
+		}
+		&__sort-list h3 {
+			margin-right: 0;
+		}
+		&__sort-list .button--cons {
+			margin-right: 0;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		&__sort-block {
+			display: none;
+		}
+		&__request-row-body h3 {
+			margin-bottom: 10px;
+		}
+		&__request-row-body {
+			width: 100%;
+		}
+		&__request-row-bottom {
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 20px;
+		}
+		&__request-list-block {
+			flex-direction: column;
+		}
+		&__request-row-photo {
+			width: 140px;
+		}
+		&__request-list-photo {
+			width: 120px;
+			height: 158px;
+		}
+		&__request-list-body {
+			padding: 20px;
+		}
+		&__request-list-body h3 {
+			margin-bottom: 10px;
+		}
+		&__request-list-option {
+			margin-bottom: 10px;
+		}
+		&__request-list-bottom {
+			flex-direction: row;
+			margin-top: 0;
+			margin-right: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		&__request-list-bottom .button--approve {
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+		.button--edit {
+			margin-top: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.my-casting-card {
+		&__container {
+			flex-direction: column;
+		}
+		&__photo-block {
+			margin-right: 0;
+			order: 2;
+		}
+		&__heading {
+			order: 1;
+		}
+		&__request-row-block {
+			width: 48%;
+		}
+	}
+}

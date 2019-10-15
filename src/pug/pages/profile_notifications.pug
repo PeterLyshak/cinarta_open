@@ -1,0 +1,360 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="theme-color" content="#ff9800")
+		meta(name="msapplication-navbutton-color" content="#ff9800")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="apple-touch-fullscreen" content="yes")
+		link(rel="icon" type="image/x-icon" sizes="16x16" href="#")
+		link(rel="icon" type="image/x-icon" sizes="32x32" href="#")
+		link(rel="icon" type="image/png" sizes="50x50" href="#")
+		link(rel="icon" type="image/png" sizes="60x60" href="#")
+		link(rel="icon" type="image/png" sizes="72x72" href="#")
+		link(rel="icon" type="image/png" sizes="76x76" href="#")
+		link(rel="icon" type="image/png" sizes="114x114" href="#")
+		link(rel="icon" type="image/png" sizes="120x120" href="#")
+		link(rel="icon" type="image/png" sizes="144x144" href="#")
+		link(rel="icon" type="image/png" sizes="152x152" href="#")
+		meta(name="format-detection" content="telephone=no")
+		title Cinarta
+		link(rel="stylesheet" href="static/css/main.css")
+	body
+		svg(style="display:none")
+			symbol(id="bubble" width="18" height="18")
+				path(d="M16.795 3.732C15.99 2.58 14.9 1.67 13.52 1.002 12.141.334 10.634 0 9 0 7.781 0 6.616.197 5.505.592c-1.112.394-2.07.927-2.873 1.599A7.65 7.65 0 0 0 .713 4.587 6.289 6.289 0 0 0 0 7.499C0 8.67.303 9.768.909 10.79c.606 1.023 1.435 1.883 2.486 2.578-.074.312-.16.61-.261.89-.1.281-.191.512-.271.692-.08.18-.19.379-.327.597a6.059 6.059 0 0 1-.311.463l-.347.445a39.981 39.981 0 0 0-.391.51l-.07.1-.061.105c-.034.059-.049.096-.045.11a.36.36 0 0 1-.02.118c-.017.063-.015.11.005.14v.012c.027.141.085.254.175.34.09.086.193.121.307.105a6.596 6.596 0 0 0 1.145-.257c1.754-.524 3.295-1.469 4.62-2.836.503.063.988.094 1.457.094 1.634 0 3.14-.334 4.52-1.002 1.38-.668 2.471-1.578 3.275-2.73C17.598 10.113 18 8.858 18 7.5c0-1.36-.402-2.615-1.205-3.767z")
+			symbol(id="caret-select" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg")
+				path(d="M11.7772 0.230869C11.6289 0.0769137 11.4531 0 11.2499 0H0.750056C0.546802 0 0.371088 0.0769137 0.222628 0.230869C0.0741683 0.384994 0 0.567212 0 0.777863C0 0.988471 0.0741683 1.17069 0.222628 1.32469L5.47257 6.76896C5.6212 6.92292 5.79691 7 6 7C6.20309 7 6.37897 6.92292 6.52731 6.76896L11.7772 1.32464C11.9255 1.17069 12 0.988471 12 0.77782C12 0.567212 11.9255 0.384994 11.7772 0.230869Z")
+			symbol(id="apple" width="19" height="23")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.974 0c.158 1.27-.423 2.542-1.284 3.459-.862.915-2.275 1.627-3.66 1.533-.187-1.244.512-2.54 1.31-3.352C11.23.725 12.735.044 13.975 0zm4.398 8.247c-.24.142-2.532 1.505-2.503 4.255.03 3.315 2.965 4.466 3.125 4.529l.006.002a2.286 2.286 0 0 0-.008.024c-.07.214-.541 1.665-1.608 3.162-.973 1.365-1.98 2.723-3.57 2.751-.765.014-1.275-.198-1.806-.418-.556-.231-1.133-.471-2.047-.471-.957 0-1.562.247-2.145.485-.504.207-.992.406-1.677.433-1.535.054-2.703-1.474-3.683-2.835C.45 17.384-1.081 12.306.976 8.878c1.02-1.702 2.847-2.78 4.827-2.808.855-.015 1.682.3 2.406.576.553.21 1.046.399 1.444.399.359 0 .839-.182 1.398-.394.881-.333 1.96-.741 3.07-.633.761.03 2.896.294 4.267 2.22a2.71 2.71 0 0 1-.017.01z" fill="#fff")
+			symbol(id="android" width="21" height="24")
+				path(d="M1.531 8h-.063C.659 8 0 8.638 0 9.416v6.167C0 16.363.66 17 1.468 17h.064C2.341 17 3 16.362 3 15.583V9.416C2.999 8.638 2.339 8 1.531 8zM4 17.869c0 .726.58 1.317 1.29 1.317h1.378v3.376c0 .793.632 1.438 1.403 1.438h.06c.775 0 1.406-.646 1.406-1.438v-3.376h1.926v3.376c0 .793.634 1.438 1.405 1.438h.06c.774 0 1.404-.646 1.404-1.438v-3.376h1.38c.708 0 1.288-.591 1.288-1.317V8H4v9.869z" fill="#fff")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.715 1.961L14.802.344a.217.217 0 0 0-.067-.307.234.234 0 0 0-.32.065l-1.127 1.673a7.595 7.595 0 0 0-2.788-.522c-.998 0-1.941.188-2.789.522L6.586.102a.237.237 0 0 0-.321-.065.218.218 0 0 0-.068.307l1.088 1.617C5.323 2.887 4 4.633 4 6.635A4 4 0 0 0 4.019 7h12.963c.011-.12.018-.241.018-.365 0-2.002-1.324-3.748-3.285-4.674zm-6.22 2.895a.612.612 0 0 1-.624-.6c0-.333.28-.6.624-.6a.61.61 0 0 1 .624.6c0 .333-.28.6-.624.6zm5.385-.6c0 .333.28.6.624.6a.61.61 0 0 0 .623-.6.61.61 0 0 0-.623-.6.611.611 0 0 0-.624.6z" fill="#fff")
+				path(d="M19.531 8h-.061C18.661 8 18 8.638 18 9.416v6.167c0 .78.663 1.417 1.47 1.417h.062c.81 0 1.468-.638 1.468-1.417V9.416C21 8.638 20.34 8 19.531 8z" fill="#fff")
+			symbol(id="arrow-page" width="20" height="7")
+				path(d="M0 2.62h18.788v1.537H0z")
+				path(d="M17.084.472l2.571 2.57-1.087 1.088-2.57-2.571z")
+				path(d="M15.998 5.216l2.57-2.57 1.088 1.086-2.571 2.57z")
+			symbol(id="actor" width="21" height="27")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M2.551 25.274l-.242.204a.844.844 0 0 0-.086 1.225.932.932 0 0 0 1.277.083l3.282-2.752h7.435l3.283 2.752a.932.932 0 0 0 1.276-.083.844.844 0 0 0-.086-1.225l-3.524-2.954-3.292-2.76L16.364 16h-2.75l-3.115 2.61L7.385 16h-2.75l4.49 3.764-3.261 2.734c-.01.007-2.513 2.106-3.313 2.776zM10.5 21l1.5 2H9l1.5-2zM.87 6.996c.482 0 .872.349.872.778v1.739h.592V.778c0-.43.39-.778.87-.778h14.59c.48 0 .871.349.871.778v8.735h.593V7.774c0-.43.39-.778.87-.778.481 0 .872.349.872.778v5.448c0 .43-.39.778-.872.778H.871C.39 14 0 13.652 0 13.222V7.774c0-.43.39-.778.87-.778zM11.797 3.64l-.749-.075-.335-.472c-.086-.123-.339-.123-.425 0l-.335.472-.749.075c-.195.02-.272.186-.132.282l.542.367-.128.519c-.033.135.172.237.345.174l.67-.245.67.245c.173.063.377-.04.344-.174l-.128-.519.542-.367c.14-.095.063-.262-.132-.282zM17 9H4V7h13v2z" fill="#0C2A4D")
+			symbol(id="megaphone" width="22" height="22")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M5.25 5.113h1c.907 0 1.83-.04 2.75-.113v10a34.91 34.91 0 0 0-2.75-.113h-1c-.997 0-1.835-.612-2.13-1.45C1.352 13.157 0 11.725 0 10c0-1.725 1.352-3.157 3.12-3.437.295-.838 1.133-1.45 2.13-1.45zM1.5 10c0 .91.627 1.687 1.5 1.975v-3.95C2.127 8.313 1.5 9.09 1.5 10z" fill="#0C2A4D")
+				path(d="M9.97 19.421l-.523-3.219a29.871 29.871 0 0 0-3.328-.194h-.973c-.05 0-.097-.006-.146-.008l.68 4.127C5.86 21.212 6.769 22 7.84 22c1.335 0 2.35-1.23 2.13-2.579zM20.5 0c-.828 0-1.5.654-1.5 1.462v16.076c0 .808.672 1.462 1.5 1.462s1.5-.654 1.5-1.462V1.462C22 .654 21.328 0 20.5 0zM10 4.043v10.914c3.57.458 5.385 1.159 8 2.043V2c-2.596.878-4.415 1.583-8 2.043z" fill="#0C2A4D")
+		header#header.page-header
+			.wrapper
+				.page-header__row
+					.page-header__logo
+						a(href="index.html")
+							img(src="static/img/cinarta.svg", alt="Cinarta")
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="#") Кастинги
+							li
+								a(href="#") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Партнеры
+							li
+								a(href="#") Обратная связь
+					a.page-header__toggle(href="#" data-toggle="modal" data-target="#header-menu")
+						span
+					.page-header__user-wrapper
+						a.notifications-link(href="#")
+							svg.bubble--icon(width="18" height="18")
+								use(xlink:href="#bubble")
+							span.buble-number 4
+						button.button.button--exit(type="button" data-jq-dropdown="#jq-dropdown-1")
+							.page-header__user
+								.user__photo
+									img(src="static/img/katya.png", alt="")
+								span.user__name Екатерина 
+									br
+									| Тутубалина
+								svg.exit--icon(width="12" height="7")
+									use(xlink:href="#caret-select")
+						#jq-dropdown-1.jq-dropdown.jq-dropdown-tip.jq-dropdown-relative.jq-dropdown-anchor-right
+							.jq-dropdown-menu.page-header__user-menu
+								a(href="activation.html") Подписка
+								a(href="profile_info.html") Мой профиль
+								a(href="#") Настройки
+								a(href="#") Помощь
+								a(href="#") Выйти
+			.page-header__menu.popup-block#header-menu
+				.inner__menu
+					a.page-header__toggle.close-button(href="#" data-toggle="dismiss")
+						span
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="#") Кастинги
+							li
+								a(href="#") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Приложение
+							li
+								a(href="#") Обратная связь
+		.main-page-wrap
+			.main-page-blocks
+				section.profile-notifications
+					.wrapper
+						.breadcrumbs
+							ul.page__list
+								li
+									a(href="#") Главная
+								li
+									span Оповещения
+						.profile-notifications__wrapper
+							.profile-info__heading
+								ul.page__list.profile-info__sidebar-nav
+									li.active
+										a(href="#") Все оповещения
+									li
+										a(href="#") По вакансии
+									li
+										a(href="#") По кастингу
+									li
+										a(href="#") Информативные
+							.create-casting__container
+								form.create-casting__form
+									.profile-notifications__form-wrapper
+										h1 Все оповещения
+										button.button.button--notification(type="button" data-toggle="notific-expand") Настройки
+									.profile-notifications__container
+										.profile-notifications__left-part
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Художественный фильм
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-34" type="checkbox")
+													label(for="checkbox-34")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Музыкальный видеоклип
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-35" type="checkbox")
+													label(for="checkbox-35")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Реклама
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-36" type="checkbox")
+													label(for="checkbox-36")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Телесериал
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-37" type="checkbox")
+													label(for="checkbox-37")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Документальный фильм
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-38" type="checkbox")
+													label(for="checkbox-38")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Промо ролик
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-39" type="checkbox")
+													label(for="checkbox-39")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Театральная постановка
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-40" type="checkbox")
+													label(for="checkbox-40")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Получать уведомления о некоммерческих кастингах 
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-41" type="checkbox")
+													label(for="checkbox-41")
+											.profile-notifications__row
+												.create-casting__form-left-part
+													label.notification-price Цена от - для Специализаций "Актер", "Актер любитель", "Каскадер"
+												.profile-notifications__select
+													.create-casting__type
+														.select__wrapper
+															select.nice-select
+																option(value="" selected disabled hidden) 1000
+																option(value="") 5000
+																option(value="") 10000
+																option(value="") 15000
+																option(value="") 20000
+																option(value="") 25000
+																option(value="") 30000
+																option(value="") 35000
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Готов к командировкам 
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-42" type="checkbox")
+													label(for="checkbox-42")
+										.profile-notifications__right-part
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Художественный фильм
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-34" type="checkbox")
+													label(for="checkbox-34")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Музыкальный видеоклип
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-35" type="checkbox")
+													label(for="checkbox-35")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Реклама
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-36" type="checkbox")
+													label(for="checkbox-36")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Телесериал
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-37" type="checkbox")
+													label(for="checkbox-37")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Документальный фильм
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-38" type="checkbox")
+													label(for="checkbox-38")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Промо ролик
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-39" type="checkbox")
+													label(for="checkbox-39")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Театральная постановка
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-40" type="checkbox")
+													label(for="checkbox-40")
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Получать уведомления о некоммерческих кастингах 
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-41" type="checkbox")
+													label(for="checkbox-41")
+											.profile-notifications__row
+												.create-casting__form-left-part
+													label.notification-price Цена от - для Специализаций "Актер", "Актер любитель", "Каскадер"
+												.profile-notifications__select
+													.create-casting__type
+														.select__wrapper
+															select.nice-select
+																option(value="" selected disabled hidden) 1000
+																option(value="") 5000
+																option(value="") 10000
+																option(value="") 15000
+																option(value="") 20000
+																option(value="") 25000
+																option(value="") 30000
+																option(value="") 35000
+											.create-casting__form-row
+												.create-casting__form-left-part
+													label Готов к командировкам 
+												.create-casting__form-right-part
+													input.input-ios(id="checkbox-42" type="checkbox")
+													label(for="checkbox-42")
+								.profile-notifications__casting-block
+									span.casting__value 1 февраля 2019 г.
+									p.page__text Вы подходите по параметрам на кастинг - Роль "Участники ток-шоу" - Для съемок нового комедийного телесериала "Мылодрама" 
+										br
+										| нужны мужчины и женщины проф-актер на роль: Участников ток-шоу. ( Будет импровизированный текст)
+										br
+										| Возраст: 25-30 лет. 
+										a.casting__value(href="#")  Ещё
+									a.profile-notifications__link(href="#") Перейти в кастинг
+										svg.icon--notification(width="20" height="7")
+											use(xlink:href="#arrow-page")
+									.profile-notifications__info
+										span.page__text Москва (Россия)
+										span.page__text до 10 февраля 2019 г.
+								.profile-notifications__casting-block
+									span.casting__value 1 февраля 2019 г.
+									p.page__text Вы подходите по параметрам на кастинг - Роль "Участники ток-шоу" - Для съемок нового комедийного телесериала "Мылодрама" 
+										br
+										| нужны мужчины и женщины проф-актер на роль: Участников ток-шоу. ( Будет импровизированный текст)
+										br
+										| Возраст: 25-30 лет. 
+										a.casting__value(href="#")  Ещё
+									a.profile-notifications__link(href="#") Перейти в кастинг
+										svg.icon--notification(width="20" height="7")
+											use(xlink:href="#arrow-page")
+									.profile-notifications__info
+										span.page__text Москва (Россия)
+										span.page__text до 10 февраля 2019 г.
+									svg.notific-icon(width="22" height="22")
+										use(xlink:href="#megaphone")
+								.profile-notifications__term-block
+									span.casting__value 1 февраля 2019 г.
+									p.page__text Истечение срока подписки через 2 дня
+								.profile-notifications__casting-block
+									span.casting__value 1 февраля 2019 г.
+									p.page__text Вы подходите по параметрам на кастинг - Роль "Участники ток-шоу" - Для съемок нового комедийного телесериала "Мылодрама" 
+										br
+										| нужны мужчины и женщины проф-актер на роль: Участников ток-шоу. ( Будет импровизированный текст)
+										br
+										| Возраст: 25-30 лет. 
+										a.casting__value(href="#")  Ещё
+									a.profile-notifications__link(href="#") Перейти в кастинг
+										svg.icon--notification(width="20" height="7")
+											use(xlink:href="#arrow-page")
+									.profile-notifications__info
+										span.page__text Москва (Россия)
+										span.page__text до 10 февраля 2019 г.
+									svg.notific-icon(width="21" height="27")
+										use(xlink:href="#actor")
+								.profile-notifications__term-block
+									span.casting__value 1 февраля 2019 г.
+									p.page__text Истечение срока подписки через 2 дня
+			footer.main-footer
+				.wrapper
+					.main-footer__container
+						.main-footer__content
+							.footer__box
+								img(src="static/img/footer_cinarta.svg", alt="Логотип")
+								p.copyright__text © 2018, «Синарта» поиск исполнителей
+							.footer__box
+								span.app__title Скачать приложение
+								.apps__box
+									a.apps__link(href="#")
+										svg(width="19" height="23")
+											use(xlink:href="#apple")
+									a.apps__link(href="#")
+										svg(width="21" height="24")
+											use(xlink:href="#android")
+								a.footer__link(href="#") Пользовательськое соглашение
+								a.footer__link(href="#") Политика конфиденциальности
+						.footer__box
+							a.footer__main-link(href="#") Мой профиль
+							a.footer__link(href="entrance.html") Вход
+							a.footer__link(href="#") Вакансии
+							a.footer__link(href="#") Сообщения
+							a.footer__link(href="casting.html") Кастинги
+						.footer__box
+							a.footer__main-link(href="#") Найти исполнителя
+							a.footer__link(href="#") Создать вакансию
+							a.footer__link(href="actors_list.html") Найти актера
+							a.footer__link(href="create_casting.html") Создать кастинг
+							a.footer__link(href="cinema.html") Киносфера
+						.footer__box
+							a.footer__main-link(href="#") Сервисы
+							a.footer__link(href="#") Поиск по сайту
+							a.footer__link(href="#") Помощь
+							a.footer__link(href="#") Обратная связь
+	script(src="static/js/jquery-3.3.1.min.js")
+	script(src="static/js/plugins.js")
+	script(src="static/js/jquery.dropdown.min.js")
+	script(src="static/js/main.js")

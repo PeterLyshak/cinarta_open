@@ -1,0 +1,48 @@
+.profile-video .subscription__menu-block {
+	margin-bottom: 60px;
+}
+
+.profile-video__container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 60px;
+}
+
+.profile-video .media__title {
+	margin-bottom: 30px;
+}
+
+.profile-video__search {
+	display: flex;
+	flex-direction: column;
+	input {
+		margin-bottom: 30px;
+	}
+}
+
+.profile-video__none {
+	line-height: 19px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #353535;
+}
+
+@media screen and (max-width: 767px) {
+	.profile-video .subscription__menu-block {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.profile-video__title {
+		margin-bottom: 20px;
+	}
+	.button--video {
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	.profile-video__container {
+		margin-bottom: 30px;
+	}
+	.profile-video .media__title {
+		margin-bottom: 20px;
+	}
+}

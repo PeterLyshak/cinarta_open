@@ -1,0 +1,1084 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="theme-color" content="#ff9800")
+		meta(name="msapplication-navbutton-color" content="#ff9800")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="apple-touch-fullscreen" content="yes")
+		link(rel="icon" type="image/x-icon" sizes="16x16" href="#")
+		link(rel="icon" type="image/x-icon" sizes="32x32" href="#")
+		link(rel="icon" type="image/png" sizes="50x50" href="#")
+		link(rel="icon" type="image/png" sizes="60x60" href="#")
+		link(rel="icon" type="image/png" sizes="72x72" href="#")
+		link(rel="icon" type="image/png" sizes="76x76" href="#")
+		link(rel="icon" type="image/png" sizes="114x114" href="#")
+		link(rel="icon" type="image/png" sizes="120x120" href="#")
+		link(rel="icon" type="image/png" sizes="144x144" href="#")
+		link(rel="icon" type="image/png" sizes="152x152" href="#")
+		meta(name="format-detection" content="telephone=no")
+		title Cinarta
+		link(rel="stylesheet" href="static/css/main.css")
+	body
+		svg(style="display:none")
+			symbol(id="bubble" width="18" height="18")
+				path(d="M16.795 3.732C15.99 2.58 14.9 1.67 13.52 1.002 12.141.334 10.634 0 9 0 7.781 0 6.616.197 5.505.592c-1.112.394-2.07.927-2.873 1.599A7.65 7.65 0 0 0 .713 4.587 6.289 6.289 0 0 0 0 7.499C0 8.67.303 9.768.909 10.79c.606 1.023 1.435 1.883 2.486 2.578-.074.312-.16.61-.261.89-.1.281-.191.512-.271.692-.08.18-.19.379-.327.597a6.059 6.059 0 0 1-.311.463l-.347.445a39.981 39.981 0 0 0-.391.51l-.07.1-.061.105c-.034.059-.049.096-.045.11a.36.36 0 0 1-.02.118c-.017.063-.015.11.005.14v.012c.027.141.085.254.175.34.09.086.193.121.307.105a6.596 6.596 0 0 0 1.145-.257c1.754-.524 3.295-1.469 4.62-2.836.503.063.988.094 1.457.094 1.634 0 3.14-.334 4.52-1.002 1.38-.668 2.471-1.578 3.275-2.73C17.598 10.113 18 8.858 18 7.5c0-1.36-.402-2.615-1.205-3.767z")
+			symbol(id="caret-select" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg")
+				path(d="M11.7772 0.230869C11.6289 0.0769137 11.4531 0 11.2499 0H0.750056C0.546802 0 0.371088 0.0769137 0.222628 0.230869C0.0741683 0.384994 0 0.567212 0 0.777863C0 0.988471 0.0741683 1.17069 0.222628 1.32469L5.47257 6.76896C5.6212 6.92292 5.79691 7 6 7C6.20309 7 6.37897 6.92292 6.52731 6.76896L11.7772 1.32464C11.9255 1.17069 12 0.988471 12 0.77782C12 0.567212 11.9255 0.384994 11.7772 0.230869Z")
+			symbol(id="apple" width="19" height="23")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.974 0c.158 1.27-.423 2.542-1.284 3.459-.862.915-2.275 1.627-3.66 1.533-.187-1.244.512-2.54 1.31-3.352C11.23.725 12.735.044 13.975 0zm4.398 8.247c-.24.142-2.532 1.505-2.503 4.255.03 3.315 2.965 4.466 3.125 4.529l.006.002a2.286 2.286 0 0 0-.008.024c-.07.214-.541 1.665-1.608 3.162-.973 1.365-1.98 2.723-3.57 2.751-.765.014-1.275-.198-1.806-.418-.556-.231-1.133-.471-2.047-.471-.957 0-1.562.247-2.145.485-.504.207-.992.406-1.677.433-1.535.054-2.703-1.474-3.683-2.835C.45 17.384-1.081 12.306.976 8.878c1.02-1.702 2.847-2.78 4.827-2.808.855-.015 1.682.3 2.406.576.553.21 1.046.399 1.444.399.359 0 .839-.182 1.398-.394.881-.333 1.96-.741 3.07-.633.761.03 2.896.294 4.267 2.22a2.71 2.71 0 0 1-.017.01z" fill="#fff")
+			symbol(id="android" width="21" height="24")
+				path(d="M1.531 8h-.063C.659 8 0 8.638 0 9.416v6.167C0 16.363.66 17 1.468 17h.064C2.341 17 3 16.362 3 15.583V9.416C2.999 8.638 2.339 8 1.531 8zM4 17.869c0 .726.58 1.317 1.29 1.317h1.378v3.376c0 .793.632 1.438 1.403 1.438h.06c.775 0 1.406-.646 1.406-1.438v-3.376h1.926v3.376c0 .793.634 1.438 1.405 1.438h.06c.774 0 1.404-.646 1.404-1.438v-3.376h1.38c.708 0 1.288-.591 1.288-1.317V8H4v9.869z" fill="#fff")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.715 1.961L14.802.344a.217.217 0 0 0-.067-.307.234.234 0 0 0-.32.065l-1.127 1.673a7.595 7.595 0 0 0-2.788-.522c-.998 0-1.941.188-2.789.522L6.586.102a.237.237 0 0 0-.321-.065.218.218 0 0 0-.068.307l1.088 1.617C5.323 2.887 4 4.633 4 6.635A4 4 0 0 0 4.019 7h12.963c.011-.12.018-.241.018-.365 0-2.002-1.324-3.748-3.285-4.674zm-6.22 2.895a.612.612 0 0 1-.624-.6c0-.333.28-.6.624-.6a.61.61 0 0 1 .624.6c0 .333-.28.6-.624.6zm5.385-.6c0 .333.28.6.624.6a.61.61 0 0 0 .623-.6.61.61 0 0 0-.623-.6.611.611 0 0 0-.624.6z" fill="#fff")
+				path(d="M19.531 8h-.061C18.661 8 18 8.638 18 9.416v6.167c0 .78.663 1.417 1.47 1.417h.062c.81 0 1.468-.638 1.468-1.417V9.416C21 8.638 20.34 8 19.531 8z" fill="#fff")
+			symbol(id="search" width="16" height="16")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M11.973 11.296l3.889 3.888a.48.48 0 0 1-.338.816.483.483 0 0 1-.337-.142l-3.889-3.888a6.797 6.797 0 0 1-4.474 1.674C3.062 13.644 0 10.583 0 6.822A6.83 6.83 0 0 1 6.824 0c3.761 0 6.823 3.058 6.823 6.822 0 1.71-.631 3.275-1.675 4.474zM6.82.958A5.871 5.871 0 0 0 .955 6.822 5.874 5.874 0 0 0 6.82 12.69a5.874 5.874 0 0 0 5.866-5.868A5.871 5.871 0 0 0 6.82.958z" fill="#000")
+		header#header.page-header
+			.wrapper
+				.page-header__row
+					.page-header__logo
+						a(href="index.html")
+							img(src="static/img/cinarta.svg", alt="Cinarta")
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="#") Кастинги
+							li
+								a(href="#") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Партнеры
+							li
+								a(href="#") Обратная связь
+					a.page-header__toggle(href="#" data-toggle="modal" data-target="#header-menu")
+						span
+					.page-header__user-wrapper
+						a.notifications-link(href="#")
+							svg.bubble--icon(width="18" height="18")
+								use(xlink:href="#bubble")
+							span.buble-number 4
+						button.button.button--exit(type="button" data-jq-dropdown="#jq-dropdown-1")
+							.page-header__user
+								.user__photo
+									img(src="static/img/katya.png", alt="")
+								span.user__name Екатерина 
+									br
+									| Тутубалина
+								svg.exit--icon(width="12" height="7")
+									use(xlink:href="#caret-select")
+						#jq-dropdown-1.jq-dropdown.jq-dropdown-tip.jq-dropdown-relative.jq-dropdown-anchor-right
+							.jq-dropdown-menu.page-header__user-menu
+								a(href="activation.html") Подписка
+								a(href="profile_info.html") Мой профиль
+								a(href="#") Настройки
+								a(href="#") Помощь
+								a(href="#") Выйти
+			.page-header__menu.popup-block#header-menu
+				.inner__menu
+					a.page-header__toggle.close-button(href="#" data-toggle="dismiss")
+						span
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="casting.html") Кастинги
+							li
+								a(href="cinema.html") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Приложение
+							li
+								a(href="#") Обратная связь
+		.main-page-wrap
+			.main-page-blocks
+				section.profile-info
+					.subscription__container
+						.wrapper
+							.subscription__user-photo
+								img(src="static/img/alina.jpg", alt="")
+							h3.subscription__user-name Алина Петрова
+					.subscription__menu-block
+						.wrapper
+							ul.page__list.subscription__menu
+								li.active
+									a(href="javascript:;" data-toggle="profile-tab" data-target="#profile-tab-1") Информация
+								li
+									a(href="javascript:;" data-toggle="profile-tab" data-target="#profile-tab-2") Специализация
+								li
+									a(href="javascript:;" data-toggle="profile-tab" data-target="#profile-tab-3") Фото
+								li
+									a(href="javascript:;" data-toggle="profile-tab" data-target="#profile-tab-4") Видео
+								li
+									a(href="javascript:;" data-toggle="profile-tab" data-target="#profile-tab-5") Дополнительная информация
+					.wrapper
+						.profile-info__tab-content.active#profile-tab-1
+							.create-casting__container
+								form.profile-info__form
+									h3.page__heading.profile__title Информация
+									.create-casting__form-control
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Имя 
+													span *
+											.create-casting__form-right-part
+												input.form-input(type="text" placeholder="Введите ваше имя")
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Фамилия 
+													span *
+											.create-casting__form-right-part
+												input.form-input(type="text" placeholder="Введите вашу фамилию")
+									.create-casting__form-control
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Дата рождения 
+													span *
+											.create-casting__form-right-part
+												.create-casting__date
+													.selects
+														.select__wrapper.day
+															select.nice-select
+																option(value="" selected disabled hidden) 01
+																option(value="") 02
+																option(value="") 03
+																option(value="") 04
+																option(value="") 05
+																option(value="") 06
+																option(value="") 07
+																option(value="") 08
+																option(value="") 09
+																option(value="") 10
+																option(value="") 12
+																option(value="") 13
+																option(value="") 14
+																option(value="") 15
+																option(value="") 16
+																option(value="") 17
+																option(value="") 18
+																option(value="") 19
+																option(value="") 20
+																option(value="") 21
+																option(value="") 22
+																option(value="") 23
+																option(value="") 24
+																option(value="") 25
+																option(value="") 26
+																option(value="") 27
+																option(value="") 28
+																option(value="") 29
+																option(value="") 30
+																option(value="") 31
+														.select__wrapper.month
+															select.nice-select
+																option(value="" selected disabled hidden) Январь
+																option(value="") Февраль
+																option(value="") Март
+																option(value="") Апрель
+																option(value="") Май
+																option(value="") Июнь
+																option(value="") Июль
+																option(value="") Август
+																option(value="") Сентябрь
+																option(value="") Октябрь
+																option(value="") Ноябрь
+																option(value="") Декабрь
+														.select__wrapper.year
+															select.nice-select
+																option(value="" selected disabled hidden) 2019
+																option(value="") 2005
+																option(value="") 2004
+																option(value="") 2003
+																option(value="") 2002
+																option(value="") 2001
+																option(value="") 2000
+																option(value="") 1999
+																option(value="") 1998
+																option(value="") 1997
+																option(value="") 1996
+																option(value="") 1995
+																option(value="") 1994
+																option(value="") 1993
+																option(value="") 1992
+																option(value="") 1991
+																option(value="") 1990
+																option(value="") 1989
+																option(value="") 1988
+																option(value="") 1987
+																option(value="") 1986
+																option(value="") 1984
+																option(value="") 1983
+																option(value="") 1982
+																option(value="") 1981
+																option(value="") 1980
+																option(value="") 1979
+																option(value="") 1978
+																option(value="") 1977
+																option(value="") 1976
+																option(value="") 1975
+																option(value="") 1974
+																option(value="") 1973
+																option(value="") 1972
+																option(value="") 1971
+																option(value="") 1970
+																option(value="") 1969
+																option(value="") 1968
+																option(value="") 1967
+																option(value="") 1966
+																option(value="") 1965
+																option(value="") 1964
+																option(value="") 1963
+																option(value="") 1962
+																option(value="") 1961
+																option(value="") 1960
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Пол 
+													span *
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper
+														select.type-of-project.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Мужской
+															option(value="") Женский
+									p.profile-info__desc Укажите ваше имя англ. буквами для правильного отображения в международном формате
+									.create-casting__form-control
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label First name  
+													span *
+											.create-casting__form-right-part
+												input.form-input(type="text" placeholder="Введите ваше имя англ. буквами")
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Last name:   
+													span *
+											.create-casting__form-right-part
+												input.form-input(type="text" placeholder="Введите ваше имя англ. буквами")
+									.create-casting__form-control
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Страна 
+													span *
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Австралия
+															option(value="") Китай
+															option(value="") Америка
+															option(value="") Украина
+															option(value="") Россия
+															option(value="") Сингапур
+															option(value="") Таиланд
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Город 
+													span *
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Киев
+															option(value="") Москва
+															option(value="") Нью-йорк
+															option(value="") Париж
+															option(value="") Берлин
+															option(value="") Будапешт
+															option(value="") Милан
+									.create-casting__form-control
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Телефон 
+													span *
+											.create-casting__form-right-part
+												input.form-input(type="tel" placeholder="Введите ваше телефон")
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Email 
+													span *
+											.create-casting__form-right-part
+												input.form-input(type="text" placeholder="Введите вашу email")
+									.create-casting__form-control-wrapper
+										.create-casting__form-row.create-casting__form-control-row
+											.create-casting__form-left-part
+												label Открыть контакты:
+											.create-casting__form-right-part
+												.profile-contacts__checkbox
+													input.profile-contacts__radio(id="radio-user" name="users-radio" type="radio")
+													label.profile-contacts__label(for="radio-user")
+														span Всем пользователям и проверенным
+															br
+															span.radio-br кастинг директорам
+												.profile-contacts__checkbox
+													input.profile-contacts__radio(id="radio-director" name="users-radio" type="radio")
+													label.profile-contacts__label(for="radio-director")
+														span Только проверенным кастинг директорам
+										button.button.button--create-casting(type="button") Сохранить
+						.profile-info__tab-content#profile-tab-2
+							section.profile-specialization
+								.create-casting__container
+									form.create-casting__form
+										h3.page__heading.profile__title Специализация
+										.create-casting__form-row.create-casting__form-search-row
+											.create-casting__form-left-part
+												input.form-input(type="text" placeholder="Введите название профессии")
+											.create-casting__form-search-part
+												button.button.button--main(type="button") Искать
+													svg.search--icon(width="16" height="16")
+														use(xlink:href="#search")
+										.profile-specialization__container
+											.profile-specialization__left-part
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-1" type="checkbox")
+														label(for="checkbox-1")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-2" type="checkbox")
+														label(for="checkbox-2")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-3" type="checkbox")
+														label(for="checkbox-3")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-4" type="checkbox")
+														label(for="checkbox-4")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-5" type="checkbox")
+														label(for="checkbox-5")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-6" type="checkbox")
+														label(for="checkbox-6")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-7" type="checkbox")
+														label(for="checkbox-7")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-8" type="checkbox")
+														label(for="checkbox-8")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-9" type="checkbox")
+														label(for="checkbox-9")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-10" type="checkbox")
+														label(for="checkbox-10")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-11" type="checkbox")
+														label(for="checkbox-11")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-12" type="checkbox")
+														label(for="checkbox-12")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-13" type="checkbox")
+														label(for="checkbox-13")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-14" type="checkbox")
+														label(for="checkbox-14")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-15" type="checkbox")
+														label(for="checkbox-15")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-16" type="checkbox")
+														label(for="checkbox-16")
+											.profile-specialization__right-part
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-17" type="checkbox")
+														label(for="checkbox-17")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-18" type="checkbox")
+														label(for="checkbox-18")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-19" type="checkbox")
+														label(for="checkbox-19")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-20" type="checkbox")
+														label(for="checkbox-20")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-21" type="checkbox")
+														label(for="checkbox-21")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-22" type="checkbox")
+														label(for="checkbox-22")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-23" type="checkbox")
+														label(for="checkbox-23")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-24" type="checkbox")
+														label(for="checkbox-24")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-25" type="checkbox")
+														label(for="checkbox-25")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-26" type="checkbox")
+														label(for="checkbox-26")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-27" type="checkbox")
+														label(for="checkbox-27")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-28" type="checkbox")
+														label(for="checkbox-28")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-29" type="checkbox")
+														label(for="checkbox-29")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер любитель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-30" type="checkbox")
+														label(for="checkbox-30")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Актер массовых сцен
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-31" type="checkbox")
+														label(for="checkbox-31")
+												.create-casting__form-row
+													.create-casting__form-left-part
+														label Модель
+													.create-casting__form-right-part
+														input.input-ios(id="checkbox-32" type="checkbox")
+														label(for="checkbox-32")
+										.profile-specialization__wrapper
+											span.profile-specialization__text Не нашли свою специализацию?
+											button.button.button--create-casting(type="button") Добавить
+						.profile-info__tab-content#profile-tab-3
+							.profile-photo__container
+								.profile-photo__heading
+									h3.page__heading.profile__title Фото
+									button.button.button--photo(type="button") Добавить фото
+								.profile-photo__gallery
+									.profile-photo__box
+										img(src="static/img/alina-photo-1.jpg", alt="Алина Петрова")
+										button.button.button--photo-close(type="button")
+									.profile-photo__box
+										img(src="static/img/alina-photo-2.jpg", alt="Алина Петрова")
+										button.button.button--photo-close(type="button")
+									.profile-photo__box
+										img(src="static/img/alina-photo-3.jpg", alt="Алина Петрова")
+										button.button.button--photo-close(type="button")
+									.profile-photo__box
+										img(src="static/img/alina-photo-1.jpg", alt="Алина Петрова")
+										button.button.button--photo-close(type="button")
+						.profile-info__tab-content#profile-tab-4
+							.profile-video__container
+								h3.page__heading.profile__title Видео
+								form.profile-video__search
+									input.form-input(type="text" placeholder="Введите URL видео или вставьте скопированный")
+									button.button.button--video(type="button") Добавить видео
+									span.profile-video__none Нет ни одного добавленного видео
+						.profile-info__tab-content#profile-tab-5
+							section.profile-add-options
+								.create-casting__container
+									form.create-casting__form
+										h3.page__heading.profile__title Дополнительные параметры
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Рост
+											.create-casting__form-right-part
+												.create-casting__date
+													.selects
+														.select__wrapper.options
+															select.nice-select
+																option(value="" selected disabled hidden) В см
+																option(value="") 150
+																option(value="") 151
+																option(value="") 152
+																option(value="") 153
+																option(value="") 154
+																option(value="") 155
+																option(value="") 156
+																option(value="") 157
+																option(value="") 158
+																option(value="") 159
+																option(value="") 160
+																option(value="") 161
+																option(value="") 162
+																option(value="") 163
+																option(value="") 164
+																option(value="") 165
+																option(value="") 166
+																option(value="") 167
+																option(value="") 168
+																option(value="") 169
+																option(value="") 170
+																option(value="") 171
+																option(value="") 172
+																option(value="") 173
+																option(value="") 174
+																option(value="") 175
+																option(value="") 176
+																option(value="") 177
+																option(value="") 178
+																option(value="") 179
+																option(value="") 180
+																option(value="") 181
+																option(value="") 182
+																option(value="") 183
+																option(value="") 184
+																option(value="") 185
+																option(value="") 186
+																option(value="") 187
+																option(value="") 188
+																option(value="") 189
+																option(value="") 190
+																option(value="") 191
+																option(value="") 192
+																option(value="") 193
+																option(value="") 194
+																option(value="") 195
+																option(value="") 196
+																option(value="") 197
+																option(value="") 198
+																option(value="") 199
+																option(value="") 200
+																option(value="") 201
+																option(value="") 202
+																option(value="") 203
+																option(value="") 204
+																option(value="") 205
+																option(value="") 206
+																option(value="") 207
+																option(value="") 208
+																option(value="") 209
+																option(value="") 210
+																option(value="") 211
+																option(value="") 212
+																option(value="") 213
+																option(value="") 214
+																option(value="") 215
+																option(value="") 216
+																option(value="") 217
+																option(value="") 218
+																option(value="") 219
+																option(value="") 220
+																option(value="") 221
+																option(value="") 222
+																option(value="") 223
+																option(value="") 224
+																option(value="") 225
+																option(value="") 226
+																option(value="") 227
+																option(value="") 228
+																option(value="") 229
+																option(value="") 230
+																option(value="") 231
+																option(value="") 232
+																option(value="") 233
+																option(value="") 234
+																option(value="") 235
+																option(value="") 236
+																option(value="") 237
+																option(value="") 238
+																option(value="") 239
+																option(value="") 240
+																option(value="") 241
+																option(value="") 242
+																option(value="") 243
+																option(value="") 244
+																option(value="") 245
+																option(value="") 246
+																option(value="") 247
+																option(value="") 248
+																option(value="") 249
+																option(value="") 250
+																option(value="") 251
+																option(value="") 252
+																option(value="") 253
+																option(value="") 254
+																option(value="") 255
+																option(value="") 256
+																option(value="") 257
+																option(value="") 257
+																option(value="") 258
+																option(value="") 259
+																option(value="") 260
+																option(value="") 261
+																option(value="") 261
+																option(value="") 262
+																option(value="") 263
+																option(value="") 264
+																option(value="") 265
+																option(value="") 266
+																option(value="") 267
+																option(value="") 268
+																option(value="") 269
+																option(value="") 270
+																option(value="") 271
+																option(value="") 272
+																option(value="") 273
+																option(value="") 274
+																option(value="") 275
+																option(value="") 276
+																option(value="") 277
+																option(value="") 278
+																option(value="") 279
+																option(value="") 280
+																option(value="") 281
+																option(value="") 282
+																option(value="") 283
+																option(value="") 284
+																option(value="") 285
+																option(value="") 286
+																option(value="") 287
+																option(value="") 288
+													input.form-input(type="text" placeholder="Введите ваш рост")
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Цвет глаз 
+													span *
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Синий
+															option(value="") Голубой
+															option(value="") Серый
+															option(value="") Зелёный
+															option(value="") Янтарный
+															option(value="") Оливковый
+															option(value="") Карий
+															option(value="") Чёрный
+															option(value="") Жёлтый
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Цвет волос 
+													span *
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Блонд
+															option(value="") Шатен
+															option(value="") Рыжий
+															option(value="") Русый
+															option(value="") Брюнет
+															option(value="") Седой
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Размер одежды: 
+													span *
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") 42
+															option(value="") 44
+															option(value="") 46
+															option(value="") 48
+															option(value="") 50
+															option(value="") 52
+															option(value="") 54
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Вождение:
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Женское
+															option(value="") Мужское
+															option(value="") Профессиональное
+															option(value="") Спортивное
+															option(value="") Гоночное
+															option(value="") Каскадерское
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Вокал:
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Сопрано
+															option(value="") Меццо-сопрано
+															option(value="") Контральто
+															option(value="") Тенор
+															option(value="") Баритон
+															option(value="") Бас
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Язык:
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+															option(value="") Китайский
+															option(value="") Английский
+															option(value="") Хинди
+															option(value="") Испанский
+															option(value="") Арабский
+															option(value="") Русский
+															option(value="") Бенгальский
+															option(value="") Португальский
+															option(value="") Индонезийский
+															option(value="") Французкий
+															option(value="") Украинский
+															option(value="") Итальянский
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Игровой возраст 
+													span *
+											.create-casting__form-right-part
+												.create-casting__date
+													.selects
+														.select__wrapper.from
+															select.nice-select
+																option(value="" selected disabled hidden) От
+																option(value="") 01
+																option(value="") 02
+																option(value="") 03
+																option(value="") 04
+																option(value="") 05
+																option(value="") 06
+																option(value="") 07
+																option(value="") 08
+																option(value="") 09
+																option(value="") 10
+																option(value="") 12
+																option(value="") 13
+																option(value="") 14
+																option(value="") 15
+																option(value="") 16
+																option(value="") 17
+																option(value="") 18
+																option(value="") 19
+																option(value="") 20
+																option(value="") 21
+																option(value="") 22
+																option(value="") 23
+																option(value="") 24
+																option(value="") 25
+																option(value="") 26
+																option(value="") 27
+																option(value="") 28
+																option(value="") 29
+																option(value="") 30
+																option(value="") 31
+																option(value="") 32
+																option(value="") 33
+																option(value="") 34
+																option(value="") 35
+																option(value="") 36
+																option(value="") 37
+																option(value="") 38
+																option(value="") 39
+																option(value="") 40
+																option(value="") 41
+																option(value="") 42
+																option(value="") 43
+																option(value="") 44
+																option(value="") 45
+																option(value="") 46
+																option(value="") 47
+																option(value="") 48
+																option(value="") 49
+																option(value="") 50
+																option(value="") 51
+																option(value="") 52
+																option(value="") 53
+																option(value="") 54
+																option(value="") 55
+																option(value="") 56
+																option(value="") 57
+																option(value="") 58
+																option(value="") 59
+																option(value="") 60
+																option(value="") 61
+																option(value="") 62
+																option(value="") 63
+																option(value="") 64
+																option(value="") 65
+																option(value="") 66
+																option(value="") 67
+																option(value="") 68
+																option(value="") 69
+																option(value="") 70
+																option(value="") 71
+																option(value="") 72
+																option(value="") 73
+																option(value="") 74
+																option(value="") 75
+																option(value="") 76
+																option(value="") 77
+																option(value="") 78
+																option(value="") 79
+																option(value="") 80
+														.select__wrapper.from
+															select.nice-select
+																option(value="" selected disabled hidden) До
+																option(value="") 01
+																option(value="") 02
+																option(value="") 03
+																option(value="") 04
+																option(value="") 05
+																option(value="") 06
+																option(value="") 07
+																option(value="") 08
+																option(value="") 09
+																option(value="") 10
+																option(value="") 12
+																option(value="") 13
+																option(value="") 14
+																option(value="") 15
+																option(value="") 16
+																option(value="") 17
+																option(value="") 18
+																option(value="") 19
+																option(value="") 20
+																option(value="") 21
+																option(value="") 22
+																option(value="") 23
+																option(value="") 24
+																option(value="") 25
+																option(value="") 26
+																option(value="") 27
+																option(value="") 28
+																option(value="") 29
+																option(value="") 30
+																option(value="") 31
+																option(value="") 32
+																option(value="") 33
+																option(value="") 34
+																option(value="") 35
+																option(value="") 36
+																option(value="") 37
+																option(value="") 38
+																option(value="") 39
+																option(value="") 40
+																option(value="") 41
+																option(value="") 42
+																option(value="") 43
+																option(value="") 44
+																option(value="") 45
+																option(value="") 46
+																option(value="") 47
+																option(value="") 48
+																option(value="") 49
+																option(value="") 50
+																option(value="") 51
+																option(value="") 52
+																option(value="") 53
+																option(value="") 54
+																option(value="") 55
+																option(value="") 56
+																option(value="") 57
+																option(value="") 58
+																option(value="") 59
+																option(value="") 60
+																option(value="") 61
+																option(value="") 62
+																option(value="") 63
+																option(value="") 64
+																option(value="") 65
+																option(value="") 66
+																option(value="") 67
+																option(value="") 68
+																option(value="") 69
+																option(value="") 70
+																option(value="") 71
+																option(value="") 72
+																option(value="") 73
+																option(value="") 74
+																option(value="") 75
+																option(value="") 76
+																option(value="") 77
+																option(value="") 78
+																option(value="") 79
+																option(value="") 80
+										.create-casting__form-row
+											.create-casting__form-left-part
+												label Бюст
+											.create-casting__form-right-part
+												.create-casting__type
+													.select__wrapper.type-of-project
+														select.nice-select
+															option(value="" selected disabled hidden) Выбрать
+																option(value="") 58
+																option(value="") 59
+																option(value="") 60
+																option(value="") 61
+																option(value="") 62
+																option(value="") 63
+																option(value="") 64
+																option(value="") 65
+																option(value="") 66
+																option(value="") 67
+																option(value="") 68
+																option(value="") 69
+																option(value="") 70
+																option(value="") 71
+																option(value="") 72
+																option(value="") 73
+																option(value="") 74
+																option(value="") 75
+																option(value="") 76
+																option(value="") 77
+																option(value="") 78
+																option(value="") 79
+																option(value="") 80
+																option(value="") 81
+																option(value="") 82
+																option(value="") 83
+																option(value="") 84
+																option(value="") 85
+																option(value="") 86
+																option(value="") 87
+																option(value="") 88
+																option(value="") 89
+																option(value="") 90
+																option(value="") 91
+																option(value="") 92
+																option(value="") 93
+																option(value="") 94
+																option(value="") 95
+																option(value="") 96
+																option(value="") 97
+																option(value="") 98
+																option(value="") 99
+																option(value="") 100
+																option(value="") 101
+																option(value="") 102
+										.profile-add-options__row
+											.create-casting__form-left-part
+												label(for="checkbox-33") Готов(а) к новым кастингам:
+											.profile-add-options__checkbox
+												input.input-ios(id="checkbox-33" type="checkbox")
+												label(for="checkbox-33")
+										.profile-add-options__wrapper
+											label(for="profile_options_textarea").profile-add-options__description-title Описание:
+											textarea#profile_options_textarea.profile-add-options__textarea(placeholder="Введите ваш текст:")
+											button.button.button--create-casting(type="button") Сохранить
+			footer.main-footer
+				.wrapper
+					.main-footer__container
+						.main-footer__content
+							.footer__box
+								img(src="static/img/footer_cinarta.svg", alt="Логотип")
+								p.copyright__text © 2018, «Синарта» поиск исполнителей
+							.footer__box
+								span.app__title Скачать приложение
+								.apps__box
+									a.apps__link(href="#")
+										svg(width="19" height="23")
+											use(xlink:href="#apple")
+									a.apps__link(href="#")
+										svg(width="21" height="24")
+											use(xlink:href="#android")
+								a.footer__link(href="#") Пользовательськое соглашение
+								a.footer__link(href="#") Политика конфиденциальности
+						.footer__box
+							a.footer__main-link(href="#") Мой профиль
+							a.footer__link(href="entrance.html") Вход
+							a.footer__link(href="#") Вакансии
+							a.footer__link(href="#") Сообщения
+							a.footer__link(href="casting.html") Кастинги
+						.footer__box
+							a.footer__main-link(href="#") Найти исполнителя
+							a.footer__link(href="#") Создать вакансию
+							a.footer__link(href="actors_list.html") Найти актера
+							a.footer__link(href="create_casting.html") Создать кастинг
+							a.footer__link(href="cinema.html") Киносфера
+						.footer__box
+							a.footer__main-link(href="#") Сервисы
+							a.footer__link(href="#") Поиск по сайту
+							a.footer__link(href="#") Помощь
+							a.footer__link(href="#") Обратная связь
+	script(src="static/js/jquery-3.3.1.min.js")
+	script(src="static/js/plugins.js")
+	script(src="static/js/jquery.dropdown.min.js")
+	script(src="static/js/main.js")

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff9800">
+    <meta name="msapplication-navbutton-color" content="#ff9800">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="#">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="50x50" href="#">
+    <link rel="icon" type="image/png" sizes="60x60" href="#">
+    <link rel="icon" type="image/png" sizes="72x72" href="#">
+    <link rel="icon" type="image/png" sizes="76x76" href="#">
+    <link rel="icon" type="image/png" sizes="114x114" href="#">
+    <link rel="icon" type="image/png" sizes="120x120" href="#">
+    <link rel="icon" type="image/png" sizes="144x144" href="#">
+    <link rel="icon" type="image/png" sizes="152x152" href="#">
+    <meta name="format-detection" content="telephone=no">
+    <title>Cinarta</title>
+    <link rel="stylesheet" href="static/css/main.css">
+  </head>
+  <body>
+    <svg style="display:none">
+      <symbol id="bubble" width="18" height="18">
+        <path d="M16.795 3.732C15.99 2.58 14.9 1.67 13.52 1.002 12.141.334 10.634 0 9 0 7.781 0 6.616.197 5.505.592c-1.112.394-2.07.927-2.873 1.599A7.65 7.65 0 0 0 .713 4.587 6.289 6.289 0 0 0 0 7.499C0 8.67.303 9.768.909 10.79c.606 1.023 1.435 1.883 2.486 2.578-.074.312-.16.61-.261.89-.1.281-.191.512-.271.692-.08.18-.19.379-.327.597a6.059 6.059 0 0 1-.311.463l-.347.445a39.981 39.981 0 0 0-.391.51l-.07.1-.061.105c-.034.059-.049.096-.045.11a.36.36 0 0 1-.02.118c-.017.063-.015.11.005.14v.012c.027.141.085.254.175.34.09.086.193.121.307.105a6.596 6.596 0 0 0 1.145-.257c1.754-.524 3.295-1.469 4.62-2.836.503.063.988.094 1.457.094 1.634 0 3.14-.334 4.52-1.002 1.38-.668 2.471-1.578 3.275-2.73C17.598 10.113 18 8.858 18 7.5c0-1.36-.402-2.615-1.205-3.767z"></path>
+      </symbol>
+      <symbol id="caret-select" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.7772 0.230869C11.6289 0.0769137 11.4531 0 11.2499 0H0.750056C0.546802 0 0.371088 0.0769137 0.222628 0.230869C0.0741683 0.384994 0 0.567212 0 0.777863C0 0.988471 0.0741683 1.17069 0.222628 1.32469L5.47257 6.76896C5.6212 6.92292 5.79691 7 6 7C6.20309 7 6.37897 6.92292 6.52731 6.76896L11.7772 1.32464C11.9255 1.17069 12 0.988471 12 0.77782C12 0.567212 11.9255 0.384994 11.7772 0.230869Z"></path>
+      </symbol>
+      <symbol id="apple" width="19" height="23">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.974 0c.158 1.27-.423 2.542-1.284 3.459-.862.915-2.275 1.627-3.66 1.533-.187-1.244.512-2.54 1.31-3.352C11.23.725 12.735.044 13.975 0zm4.398 8.247c-.24.142-2.532 1.505-2.503 4.255.03 3.315 2.965 4.466 3.125 4.529l.006.002a2.286 2.286 0 0 0-.008.024c-.07.214-.541 1.665-1.608 3.162-.973 1.365-1.98 2.723-3.57 2.751-.765.014-1.275-.198-1.806-.418-.556-.231-1.133-.471-2.047-.471-.957 0-1.562.247-2.145.485-.504.207-.992.406-1.677.433-1.535.054-2.703-1.474-3.683-2.835C.45 17.384-1.081 12.306.976 8.878c1.02-1.702 2.847-2.78 4.827-2.808.855-.015 1.682.3 2.406.576.553.21 1.046.399 1.444.399.359 0 .839-.182 1.398-.394.881-.333 1.96-.741 3.07-.633.761.03 2.896.294 4.267 2.22a2.71 2.71 0 0 1-.017.01z" fill="#fff"></path>
+      </symbol>
+      <symbol id="android" width="21" height="24">
+        <path d="M1.531 8h-.063C.659 8 0 8.638 0 9.416v6.167C0 16.363.66 17 1.468 17h.064C2.341 17 3 16.362 3 15.583V9.416C2.999 8.638 2.339 8 1.531 8zM4 17.869c0 .726.58 1.317 1.29 1.317h1.378v3.376c0 .793.632 1.438 1.403 1.438h.06c.775 0 1.406-.646 1.406-1.438v-3.376h1.926v3.376c0 .793.634 1.438 1.405 1.438h.06c.774 0 1.404-.646 1.404-1.438v-3.376h1.38c.708 0 1.288-.591 1.288-1.317V8H4v9.869z" fill="#fff"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.715 1.961L14.802.344a.217.217 0 0 0-.067-.307.234.234 0 0 0-.32.065l-1.127 1.673a7.595 7.595 0 0 0-2.788-.522c-.998 0-1.941.188-2.789.522L6.586.102a.237.237 0 0 0-.321-.065.218.218 0 0 0-.068.307l1.088 1.617C5.323 2.887 4 4.633 4 6.635A4 4 0 0 0 4.019 7h12.963c.011-.12.018-.241.018-.365 0-2.002-1.324-3.748-3.285-4.674zm-6.22 2.895a.612.612 0 0 1-.624-.6c0-.333.28-.6.624-.6a.61.61 0 0 1 .624.6c0 .333-.28.6-.624.6zm5.385-.6c0 .333.28.6.624.6a.61.61 0 0 0 .623-.6.61.61 0 0 0-.623-.6.611.611 0 0 0-.624.6z" fill="#fff"></path>
+        <path d="M19.531 8h-.061C18.661 8 18 8.638 18 9.416v6.167c0 .78.663 1.417 1.47 1.417h.062c.81 0 1.468-.638 1.468-1.417V9.416C21 8.638 20.34 8 19.531 8z" fill="#fff"></path>
+      </symbol>
+    </svg>
+    <header class="page-header" id="header">
+      <div class="wrapper">
+        <div class="page-header__row">
+          <div class="page-header__logo"><a href="index.html"><img src="static/img/cinarta.svg" alt="Cinarta"></a></div>
+          <nav class="page-header__nav">
+            <ul class="page__list">
+              <li><a href="#">Кастинги</a></li>
+              <li><a href="#">Киносфера</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#">Обратная связь</a></li>
+            </ul>
+          </nav><a class="page-header__toggle" href="#" data-toggle="modal" data-target="#header-menu"><span></span></a>
+          <div class="page-header__user-wrapper"><a class="notifications-link" href="#">
+              <svg class="bubble--icon" width="18" height="18">
+                <use xlink:href="#bubble"></use>
+              </svg><span class="buble-number">4</span></a>
+            <button class="button button--exit" type="button" data-jq-dropdown="#jq-dropdown-1">
+              <div class="page-header__user">
+                <div class="user__photo"><img src="static/img/katya.png" alt=""></div><span class="user__name">Екатерина <br>Тутубалина</span>
+                <svg class="exit--icon" width="12" height="7">
+                  <use xlink:href="#caret-select"></use>
+                </svg>
+              </div>
+            </button>
+            <div class="jq-dropdown jq-dropdown-tip jq-dropdown-relative jq-dropdown-anchor-right" id="jq-dropdown-1">
+              <div class="jq-dropdown-menu page-header__user-menu"><a href="activation.html">Подписка</a><a href="profile_info.html">Мой профиль</a><a href="#">Настройки</a><a href="#">Помощь</a><a href="#">Выйти</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__menu popup-block" id="header-menu">
+        <div class="inner__menu"><a class="page-header__toggle close-button" href="#" data-toggle="dismiss"><span></span></a>
+          <nav class="page-header__nav">
+            <ul class="page__list">
+              <li><a href="#">Кастинги</a></li>
+              <li><a href="#">Киносфера</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Приложение</a></li>
+              <li><a href="#">Обратная связь</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="main-page-wrap">
+      <div class="main-page-blocks">
+        <section class="create-news">
+          <div class="wrapper">
+            <h1>Создать новость</h1>
+            <div class="create-news__container">
+              <div class="create-news__heading">
+                <form class="create-news__form">
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Название <span class="star">*</span></label>
+                        <input class="form-input" type="text" placeholder="Введите название новости">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Короткое описание <span class="star">*</span></label>
+                        <input class="form-input" type="text" placeholder="Введите короткое описание новости">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Полное описание <span class="star">*</span></label>
+                        <textarea class="form-textarea" type="text" placeholder="Введите длинное описание новости (макс. 400 символов)"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Срок действия новости</label>
+                        <div class="selects-range-row-top">
+                          <div class="select-wrapper">
+                            <select class="nice-select">
+                              <option value="" selected disabled hidden>01</option>
+                              <option value="">02</option>
+                              <option value="">03</option>
+                              <option value="">04</option>
+                              <option value="">05</option>
+                              <option value="">06</option>
+                              <option value="">07</option>
+                              <option value="">08</option>
+                              <option value="">09</option>
+                              <option value="">10</option>
+                              <option value="">12</option>
+                              <option value="">13</option>
+                              <option value="">14</option>
+                              <option value="">15</option>
+                              <option value="">16</option>
+                              <option value="">17</option>
+                              <option value="">18</option>
+                              <option value="">19</option>
+                              <option value="">20</option>
+                              <option value="">21</option>
+                              <option value="">22</option>
+                              <option value="">23</option>
+                              <option value="">24</option>
+                              <option value="">25</option>
+                              <option value="">26</option>
+                              <option value="">27</option>
+                              <option value="">28</option>
+                              <option value="">29</option>
+                              <option value="">30</option>
+                              <option value="">31</option>
+                            </select>
+                          </div>
+                          <div class="select-wrapper">
+                            <select class="nice-select">
+                              <option value="" selected disabled hidden>Январь</option>
+                              <option value="">Февраль</option>
+                              <option value="">Март</option>
+                              <option value="">Апрель</option>
+                              <option value="">Май</option>
+                              <option value="">Июнь</option>
+                              <option value="">Июль</option>
+                              <option value="">Август</option>
+                              <option value="">Сентябрь</option>
+                              <option value="">Октябрь</option>
+                              <option value="">Ноябрь</option>
+                              <option value="">Декабрь</option>
+                            </select>
+                          </div>
+                          <div class="select-wrapper">
+                            <select class="nice-select">
+                              <option value="" selected disabled hidden>2019</option>
+                              <option value="">2020</option>
+                              <option value="">2021</option>
+                              <option value="">2022</option>
+                              <option value="">2023</option>
+                              <option value="">2024</option>
+                              <option value="">2025</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="create-news__title">Целевая аудитория</h3>
+                  <p class="create-news__text">Выберите параметры актеров, которым нужно отправить push-уведомление о появлении вашей новости</p>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Специализации <span class="star">*</span></label>
+                        <div class="select-wrapper">
+                          <select class="nice-select">
+                            <option value="" selected disabled hidden>Выбрать</option>
+                            <option value="">Специализация 1</option>
+                            <option value="">Специализация 2</option>
+                            <option value="">Специализация 3</option>
+                            <option value="">Специализация 4</option>
+                            <option value="">Специализация 5</option>
+                            <option value="">Специализация 6</option>
+                            <option value="">Специализация 7</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="create-news__form-row">
+                  <div class="form-control">
+                    <div class="create-news__selects-range">
+                      <label>Возраст <span class="star">*</span></label>
+                      <div class="selects-range-row-bottom">
+                        <div class="select-wrapper">
+                          <select class="nice-select">
+                            <option value="" selected disabled hidden>От</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                            <option value="">32</option>
+                            <option value="">33</option>
+                            <option value="">34</option>
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                            <option value="">45</option>
+                            <option value="">46</option>
+                            <option value="">47</option>
+                            <option value="">48</option>
+                            <option value="">49</option>
+                            <option value="">50</option>
+                            <option value="">51</option>
+                            <option value="">52</option>
+                            <option value="">53</option>
+                            <option value="">54</option>
+                            <option value="">55</option>
+                            <option value="">56</option>
+                            <option value="">57</option>
+                            <option value="">58</option>
+                            <option value="">59</option>
+                            <option value="">60</option>
+                            <option value="">61</option>
+                            <option value="">62</option>
+                            <option value="">63</option>
+                            <option value="">64</option>
+                            <option value="">65</option>
+                            <option value="">66</option>
+                            <option value="">67</option>
+                            <option value="">68</option>
+                            <option value="">69</option>
+                            <option value="">70</option>
+                            <option value="">71</option>
+                            <option value="">72</option>
+                            <option value="">73</option>
+                            <option value="">74</option>
+                            <option value="">75</option>
+                            <option value="">76</option>
+                            <option value="">77</option>
+                            <option value="">78</option>
+                            <option value="">79</option>
+                            <option value="">80</option>
+                          </select>
+                        </div>
+                        <div class="select-wrapper">
+                          <select class="nice-select">
+                            <option value="" selected disabled hidden>До</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                            <option value="">32</option>
+                            <option value="">33</option>
+                            <option value="">34</option>
+                            <option value="">35</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                            <option value="">45</option>
+                            <option value="">46</option>
+                            <option value="">47</option>
+                            <option value="">48</option>
+                            <option value="">49</option>
+                            <option value="">50</option>
+                            <option value="">51</option>
+                            <option value="">52</option>
+                            <option value="">53</option>
+                            <option value="">54</option>
+                            <option value="">55</option>
+                            <option value="">56</option>
+                            <option value="">57</option>
+                            <option value="">58</option>
+                            <option value="">59</option>
+                            <option value="">60</option>
+                            <option value="">61</option>
+                            <option value="">62</option>
+                            <option value="">63</option>
+                            <option value="">64</option>
+                            <option value="">65</option>
+                            <option value="">66</option>
+                            <option value="">67</option>
+                            <option value="">68</option>
+                            <option value="">69</option>
+                            <option value="">70</option>
+                            <option value="">71</option>
+                            <option value="">72</option>
+                            <option value="">73</option>
+                            <option value="">74</option>
+                            <option value="">75</option>
+                            <option value="">76</option>
+                            <option value="">77</option>
+                            <option value="">78</option>
+                            <option value="">79</option>
+                            <option value="">80</option>
+                          </select>
+                        </div>
+                        <div class="create-news__checkbox">
+                          <input class="create-casting__checkbox" id="age-checkbox" name="age-checkbox" type="checkbox">
+                          <label class="create-casting__label" for="age-checkbox"><span>Учитывать</span><br><span class="create__casting-age">игровой возраст</span></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Пол <span class="star">*</span></label>
+                        <div class="select-wrapper">
+                          <select class="nice-select">
+                            <option value="" selected disabled hidden>Выбрать</option>
+                            <option value="">Мужской</option>
+                            <option value="">Женский</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Страна <span class="star">*</span></label>
+                        <div class="select-wrapper">
+                          <select class="nice-select">
+                            <option value="" selected disabled hidden>Выбрать</option>
+                            <option value="">Австралия</option>
+                            <option value="">Китай</option>
+                            <option value="">Америка</option>
+                            <option value="">Украина</option>
+                            <option value="">Россия</option>
+                            <option value="">Сингапур</option>
+                            <option value="">Таиланд</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Город <span class="star">*</span></label>
+                        <div class="select-wrapper">
+                          <select class="nice-select">
+                            <option value="" selected disabled hidden>Выбрать</option>
+                            <option value="">Киев</option>
+                            <option value="">Москва</option>
+                            <option value="">Нью-йорк</option>
+                            <option value="">Париж</option>
+                            <option value="">Берлин</option>
+                            <option value="">Будапешт</option>
+                            <option value="">Милан</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__form-row">
+                    <div class="form-control">
+                      <div class="create-news__selects-range">
+                        <label>Push-оповещение  <span class="star">*</span></label>
+                        <input class="form-input" type="text" placeholder="Введите текст push-оповещения">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="create-news__btn-wrapper">
+                    <button class="button button--create-casting" type="button">Создать вакансию</button>
+                    <button class="button button--create-casting" type="button">Предпросмотр</button>
+                  </div>
+                </div>
+              </div>
+              <div class="create-news__photo-block">
+                <div class="create-news__photo"><img src="static/img/photo.jpg" alt=""></div>
+                <button class="button button--create-casting" type="button">Загрузить превью</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="wrapper">
+          <div class="main-footer__container">
+            <div class="main-footer__content">
+              <div class="footer__box"><img src="static/img/footer_cinarta.svg" alt="Логотип">
+                <p class="copyright__text">© 2018, «Синарта» поиск исполнителей</p>
+              </div>
+              <div class="footer__box"><span class="app__title">Скачать приложение</span>
+                <div class="apps__box"><a class="apps__link" href="#">
+                    <svg width="19" height="23">
+                      <use xlink:href="#apple"></use>
+                    </svg></a><a class="apps__link" href="#">
+                    <svg width="21" height="24">
+                      <use xlink:href="#android"></use>
+                    </svg></a></div><a class="footer__link" href="#">Пользовательськое соглашение</a><a class="footer__link" href="#">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="footer__box"><a class="footer__main-link" href="#">Мой профиль</a><a class="footer__link" href="entrance.html">Вход</a><a class="footer__link" href="#">Вакансии</a><a class="footer__link" href="#">Сообщения</a><a class="footer__link" href="casting.html">Кастинги</a></div>
+            <div class="footer__box"><a class="footer__main-link" href="#">Найти исполнителя</a><a class="footer__link" href="#">Создать вакансию</a><a class="footer__link" href="actors_list.html">Найти актера</a><a class="footer__link" href="create_casting.html">Создать кастинг</a><a class="footer__link" href="cinema.html">Киносфера</a></div>
+            <div class="footer__box"><a class="footer__main-link" href="#">Сервисы</a><a class="footer__link" href="#">Поиск по сайту</a><a class="footer__link" href="#">Помощь</a><a class="footer__link" href="#">Обратная связь</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/plugins.js"></script>
+  <script src="static/js/jquery.dropdown.min.js"></script>
+  <script src="static/js/main.js"></script>
+</html>

@@ -1,0 +1,240 @@
+.my-casting {
+	h1 {
+		margin-top: 20px;
+	}
+	&__sort-list, &__sort-block, &__wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__sort-list {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	&__sort-found {
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 400;
+		color: #7D8191;
+	}
+	&__sort-block .button {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #eef0f3;
+		fill: #757c87;
+		padding: 0;
+		width: 40px;
+		height: 40px;
+	}
+	&__sort-block .button.active {
+		background-color: #757c87;
+		fill: #fff;
+	}
+	&__row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__row-block {
+		position: relative;
+		width: 32.4%;
+		margin-bottom: 40px;
+		background-color: #fff;
+		box-shadow: 0px 12px 45px rgba(128, 134, 142, 0.212904);
+	}
+	&__request {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		border-radius: 1px;
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 264px;
+		height: 59px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 17px;
+		line-height: 20px;
+		font-weight: 400;
+		color: #0C2A4D;
+	}
+	&__row-approved, &__row-not-approved, &__list-approved, &__list-not-approved {
+		position: absolute;
+		width: 100%;
+		height: 45px;
+		top: 172px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		line-height: 17px;
+		color: #fff;
+		background-color: rgba(48, 187, 113, 0.86);
+	}
+	&__row-not-approved, &__list-not-approved {
+		background-color: rgba(187, 48, 48, 0.86);
+	}
+	&__row-photo {
+		width: 100%;
+		height: 217px;
+	}
+	&__row-photo img, &__list-photo img {
+		width: 100%;
+		height: 100%;
+		display: block;
+		backface-visibility: hidden;
+		object-fit: cover;
+	}
+	&__row-inner {
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 217px);
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 30px;
+	}
+	&__row-inner-request {
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+		color: #0C2A4D;
+		height: 29px;
+		margin-top: 24px;
+	}
+	&__title {
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 700;
+		color: #121314;
+	}
+	&__type-block {
+		margin: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 400;
+		color: #4A4D59;
+	}
+	&__type {
+		color: #29729D;
+	}
+	&__bottom-info {
+		margin-top: auto;
+		padding-top: 20px;
+		border-top: 1px solid #D2D9E3;
+	}
+	&__text {
+		margin: 0;
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: 400;
+		color: #4A4D59;
+	}
+	&__wrapper {
+		margin-top: 20px;
+	}
+	&__value {
+		font-size: 12px;
+		line-height: 21px;
+		font-weight: 400;
+		color: rgba(17, 17, 18, 0.8);
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__list-block {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		margin-bottom: 40px;
+		background-color: #fff;
+		box-shadow: 0px 14px 43px rgba(154, 162, 174, 0.230525);
+	}
+	&__list-photo {
+		width: 375px;
+		height: 281px;
+	}
+	&__list-approved, &__list-not-approved {
+		top: 236px;
+		width: 375px;
+	}
+	&__list-inner {
+		width: 780px;
+		padding-top: 32px;
+		padding-left: 58px;
+		padding-right: 54px;
+		padding-bottom: 32px;
+	}
+	&__list-inner-request {
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+		color: #0C2A4D;
+		margin-bottom: 15px;
+	}
+	&__tab-content {
+		display: none;
+	}
+	&__tab-content.active {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.my-casting {
+		&__sort-list {
+			margin-bottom: 20px;
+		}
+		&__sort-block {
+			display: none;
+		}
+		&__list-block {
+			flex-direction: column;
+		}
+		&__list-photo, &__list-approved, &__list-not-approved {
+			width: 100%;
+		}
+		&__request {
+			width: 200px;
+			top: 10px;
+			left: 45px;
+		}
+		&__list-inner {
+			width: 100%;
+			padding: 20px;
+		}
+	}
+	#my-casting-tab-1 {
+		display: none;
+	}
+	#my-casting-tab-2 {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.my-casting {
+		&__row-block {
+			width: 48%;
+			&:not(:nth-child(3n)) {
+				margin-right: 0;
+			}
+		}
+		&__list-inner {
+			width: 100%;
+			padding: 20px;
+		}
+		&__request {
+			width: 200px;
+		}
+		&__list-approved, &__list-not-approved {
+			width: 240px;
+		}
+	}
+}

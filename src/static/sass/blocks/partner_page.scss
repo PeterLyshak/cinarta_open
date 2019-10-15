@@ -1,0 +1,377 @@
+.partner-page__heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.partner-page h1 {
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: 800;
+	color: #0C2A4D;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.partner-page__start {
+	position: relative;
+	top: 20px;
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #373A3E;
+	width: 423px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #FEE98F;
+}
+
+.partner-page__content p {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #363943;
+	width: 688px;
+	margin: 0;
+}
+
+.partner-page__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.partner-page__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.partner-page__competition {
+	display: flex;
+	flex-direction: column;
+}
+
+.partner-page__competition .page__article {
+	font-weight: 800;
+	color: #0C2A4D;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.partner-page__competition-part .page__article {
+	width: 30px;
+	color: #FEE98F;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.partner-page__plan .page__article {
+	color: #0C2A4D;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.partner-page__competition-part {
+	display: flex;
+	justify-content: space-between;
+	width: 544px;
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.partner-page__competition-text {
+	display: flex;
+	align-items: center;
+	width: 487px;
+	margin: 0;
+	font-size: 16px;
+	line-height: 25px;
+	color: #363943;
+}
+
+.partner-page__content .partner-page__competition-story {
+	display: block;
+	padding-top: 10px;
+	font-size: 16px;
+	line-height: 25px;
+	color: #363943;
+	margin: 0;
+	width: 487px;
+	b {
+		font-weight: 700;
+	}	
+}
+
+.partner-page__competition-requirements {
+	display: block;
+	font-size: 18px;
+	color: #363943;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+
+.partner-page__content .partner-page__requirements-text {
+	display: block;
+	margin: 0;
+	padding-left: 50px;
+	font-size: 16px;
+	line-height: 39px;
+	font-weight: 400;
+	color: #363943;
+	b {
+		font-weight: 700;
+	}
+}
+
+.partner-page__photo-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.partner-page__photo-card {
+	width: 319px;
+	margin-bottom: 110px;
+	margin-top: 70px;
+	&:last-child {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.partner-page__photo {
+	width: 319px;
+	height: 360px;
+}
+
+.partner-page__photo img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	backface-visibility: hidden;
+}
+
+.partner-page__name {
+	display: block;
+	font-size: 22px;
+	line-height: 26px;
+	color: #363943;
+	margin-top: 32px;
+	margin-bottom: 20px;
+}
+
+.partner-page__position {
+	display: block;
+	font-size: 17px;
+	line-height: 29px;
+	font-weight: 400;
+	color: #363943;
+}
+
+.partner-page__plan {
+	width: 718px;
+}
+
+.partner-page__block {
+	display: flex;
+	flex-direction: column;
+	padding: 52px 0 60px 60px;
+	width: 644px;
+	background-color: #FEE98F;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+.partner-page__block-title {
+	font-size: 27px;
+	line-height: 32px;
+	color: #373A3E;
+	margin-bottom: 30px;
+}
+
+.partner-page__block-date {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #373A3E;
+	margin-bottom: 20px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.partner-page__plan-text {
+	margin: 0;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #363943;
+	&:nth-child(2) {
+		margin-bottom: 30px;
+	}
+}
+
+.plan-1 {
+	margin-bottom: 30px;
+}
+
+.plan-2 {
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+	.partner-page__heading {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 20px;
+	}
+	.partner-page h1 {
+		font-size: 28px;
+		line-height: 36px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.partner-page__wrapper {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.partner-page__start {
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.partner-page__content p {
+		width: 100%;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	.partner-page__main-text {
+		width: 100%;
+	}
+	.partner-page__competition-part {
+		width: 100%;
+	}
+	.partner-page__competition-text {
+		width: 100%;
+	}
+	.partner-page__competition-requirements {
+		padding-left: 0;
+	}
+	.partner-page__content .partner-page__requirements-text {
+		padding-left: 0;
+		line-height: 26px;
+	}
+	.partner-page__competition-num {
+		font-size: 28px;
+		margin-right: 10px;
+	}
+	.partner-page__competition-text {
+		align-items: flex-end;
+	}
+	.structure {
+		line-height: 40px;
+	}
+	.partner-page__competition-story, .partner-page__competition-text {
+		font-size: 14px;
+		padding-top: 10px;
+	}
+	.partner-page__plan {
+		width: 100%;
+	}
+	.partner-page__competition .page__article {
+		font-size: 24px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.partner-page__competition-part .page__article {
+		margin-top: 0;
+		padding-right: 10px;
+	}
+	.partner-page__plan .page__article {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		font-size: 28px;
+		line-height: 36px;
+	}
+	.partner-page__block {
+		width: 100%;
+		padding: 30px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	.partner-page__photo-block {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+	}
+	.partner-page__photo-card {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.partner-page__photo {
+		width: 100%;
+	}
+	.partner-page__block-date {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.plan-2 {
+		margin-bottom: 30px;
+	}
+	.partner-page__photo-card {
+		margin-top: 40px;
+	}
+	.partner-page__position {
+		font-size: 14px;
+		line-height: 26px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.partner-page__heading {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.partner-page__start {
+		margin-bottom: 50px;
+	}
+	.partner-page__wrapper {
+		flex-direction: column;
+	}
+	.partner-page__content {
+		margin-bottom: 30px;
+	}
+	.partner-page__competition .page__article {
+		margin-top: 0;
+	}
+	.partner-page__photo-block {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+	.partner-page__photo-card {
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.partner-page__photo-card:last-child {
+		position: relative;
+		top: 40px;
+	}
+	.partner-page__start {
+		width: 300px;
+		font-size: 18px;
+	}
+	.partner-page__heading, .partner-page__wrapper {
+		justify-content: space-between;
+	}
+}

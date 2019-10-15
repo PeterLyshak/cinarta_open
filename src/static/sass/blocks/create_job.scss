@@ -1,0 +1,131 @@
+.create-job {
+	h1 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	&__container {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 60px;
+	}
+	&__photo-block {
+		display: flex;
+		flex-direction: column;
+		width: 435px;
+		margin-right: 80px;
+	}
+	&__photo img {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		object-fit: cover;
+	}
+	&__heading {
+		width: 614px;
+	}
+	.button--create-casting {
+		display: flex;
+		justify-content: center;
+		width: 435px;
+	}
+	.form-control {
+		width: 100%;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
+	&__selects-range {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__selects-range label {
+		padding-top: 15px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #353535;
+	}
+	&__selects-range label span {
+		color: #E81919;
+	}
+	.select-wrapper {
+		width: 402px;
+	}
+	.selects-range-row .select-wrapper {
+		width: 130px;
+		&:nth-child(1) {
+			width: 62px;
+		}
+		&:nth-child(2) {
+			margin-right: 40px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.create-job {
+		&__container {
+			flex-direction: column;
+		}
+		&__heading {
+			width: 100%;
+		}
+		&__selects-range {
+			flex-direction: column;
+		}
+		&__photo-block {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+		.form-control:last-child {
+			margin-bottom: 10px;
+		}
+		.selects-range-row {
+			flex-direction: column;
+		}
+		.selects-range-row .select-wrapper {
+			width: 100%;
+			margin-bottom: 10px;
+			&:nth-child(1) {
+				width: 100%;
+			}
+			&:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+		.select-wrapper {
+			width: 100%;
+		}
+		.button--create-casting {
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.create-job {
+		&__container {
+			flex-direction: column;
+		}
+		&__photo-block {
+			margin-right: 0;
+			margin: 0 auto;
+			margin-bottom: 40px;
+		}
+		.form-control:last-child {
+			margin-bottom: 10px;
+		}
+		&__form .button--create-casting {
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.view-job {
+	.my-casting-card__photo {
+		height: 300px;
+	}
+	.my-casting-card__request-row-heading {
+		margin-bottom: 0;
+	}
+	.my-casting-card__request-row-photo {
+		width: 173px;
+		height: 224px;
+		flex-shrink: 0;
+	}
+	.my-casting-card__request-row-body span {
+		margin-bottom: 20px;
+	}
+	&__contact-link {
+		font-size: 12px;
+		line-height: 21px;
+		font-weight: 400;
+		color: #111112;
+		word-break: break-word;
+		transition: all .3s ease-in-out;
+		&:hover {
+			color: rgba(237,138,25,.8);
+		}
+	}
+	.my-casting-card__request-option, &__info {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.my-casting-card__request-list-body .my-casting-card__request-option {
+		width: 100%;
+		margin-bottom: 40px;
+		align-items: flex-end;
+	}
+	&__name h3 {
+		margin-bottom: 10px;
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+	}
+	.my-casting-card__request-list-heading {
+		width: 100%;
+	}
+	.my-casting-card__request-list-body {
+		width: 100%;
+		padding: 27px 35px 35px 35px;
+	}
+	&__info {
+		margin-top: auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.view-job {
+		.my-casting-card__request-row-photo {
+			height: 100%;
+			width: 140px;
+		}
+		.my-casting-card__request-row-body {
+			padding: 10px;
+		}
+	}
+}

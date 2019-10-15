@@ -1,0 +1,65 @@
+.functional {
+	padding-top: 0;
+}
+.functional-block {
+	background-image: url('../img/functional-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	backface-visibility: hidden;
+	width: 100%;
+	height: 100vh;
+}
+
+.functional-heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.functional-heading h1 {
+	font-size: 56px;
+	line-height: 67px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.functional-heading a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 290px;
+	height: 50px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #353535;
+	text-transform: uppercase;
+	background-color: #FEE98F;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#FEE98F, 15%);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.functional-heading {
+		width: 100%;
+	}
+	.functional-heading h1 {
+		font-size: 24px;
+		line-height: 36px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.functional-heading {
+		width: 100%;
+	}
+}

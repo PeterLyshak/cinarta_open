@@ -1,0 +1,556 @@
+.button {
+	border: none;
+	background: none;
+	outline: none;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.button--main {
+	width: 185px;
+	background-color: #FEE98F;
+	padding: 15px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#fee98f, 10%);
+	}
+	&:active {
+		background-color: darken(#fee98f, 10%);
+	}
+}
+
+.profile-specialization .button--main {
+	padding: 20px 0;
+	width: 182px;
+}
+
+.button--subscription {
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background-color: #FEE98F;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#FEE98F, 15%);
+	}
+}
+
+.button--off {
+	padding: 20px 70px;
+	background-color: #0C2A4D;
+	width: 320px;
+	margin-bottom: 17px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #fff;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: lighten(#0C2A4D, 10%);
+	}
+}
+
+.button--on {
+	padding: 20px 70px;
+	background-color: #fff;
+	border: 1px solid #0C2A4D;
+	width: 320px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #0C2A4D;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: lighten(#0C2A4D, 10%);
+		color: #fff;
+	}
+}
+
+.button--casting-request {
+	position: relative;
+	display: block;
+	line-height: 17px;
+	font-size: 14px;
+	color: #353535;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 20px 0;
+	width: 100%;
+	background-color: #FEE98F;
+	margin-bottom: 32px;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#FEE98F, 15%);
+	}
+}
+
+.button--create-casting {
+	width: 100%;
+	background-color: #FEE98F;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #353535;
+	padding: 20px 0;
+	text-transform: uppercase;
+	&:hover {
+		background-color: darken(#FEE98F, 15%);
+	}
+}
+
+.button--additional-form {
+	position: relative;
+	display: flex;
+	width: 100px;
+	padding: 0;
+	justify-content: flex-start;
+	color: #0D6090;
+	text-transform: none;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	transition: all .3s ease-in-out;
+	&:hover {
+		color: lighten(#0D6090, 15%);
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: 1px;
+		right: 0;
+		width: 9px;
+		height: 14px;
+		transform: rotate(180deg);
+		background-image: url('../img/create-form-arrow.svg');
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
+
+.button--additional-form.active {
+	&::after {
+		top: 3px;
+		transform: rotate(0deg);
+	}
+}
+
+.button--entrance-code {
+	line-height: 13px;
+	font-size: 11px;
+	color: #555555;
+	font-weight: 400;
+	width: 137px;
+	height: 44px;
+	padding: 15px 0;
+	border: 2px solid #F8E38B;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: #F8E38B;
+	}
+}
+
+.button--entrance {
+	width: 100%;
+	padding: 20px 0;
+	line-height: 17px;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: #FEE98F;
+	color: #353535;
+	transition: all .3s ease-in-out;
+	margin-bottom: 20px;
+	&:hover {
+		background-color: darken(#FEE98F, 15%);
+	}
+}
+
+.button--photo {
+	color: #353535;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	border: 0;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FEE98F;
+	width: 270px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.button--photo-close {
+	position: absolute;
+	top: -16px;
+	right: -10px;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #EBEDF1;
+	z-index: 10;
+}
+
+.button--photo-close::before,
+.button--photo-close::after {
+	content: '';
+	position: absolute;
+	top: 22px;
+	left: 15px;
+	width: 14px;
+	height: 1px;
+	background-color: #5A667F;
+}
+
+.button--photo-close::before {
+	transform: rotate(45deg);
+}
+
+.button--photo-close::after {
+	transform: rotate(-45deg);
+}
+
+.button--video {
+	color: #353535;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	border: 0;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FEE98F;
+	width: 270px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+
+.button--notification {
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+	font-weight: 400;
+	background-color: #0C2A4D;
+	width: 217px;
+	padding: 20px 0;
+}
+
+.button--filter {
+	line-height: 17px;
+	font-size: 14px;
+	color: #fff;
+	padding: 10px 0;
+	width: 217px;
+	text-align: center;
+	font-weight: 400;
+	background-color: #0C2A4D;
+	margin-right: 40px;
+}
+
+.button--actor {
+	position: relative;
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 23px;
+	text-transform: none;
+	color: rgba(12, 42, 77, 0.8);
+	line-height: 21px;
+	font-size: 13px;
+	font-weight: 400;
+	transition: all .3s ease-in-out;
+	&:hover {
+		color: rgba(237, 138, 25, 0.8);
+	}
+}
+
+.button--actor:hover .icon--star {
+	fill: #ED8A19;
+}
+
+.button--actor-card {
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #353535;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 323px;
+	background-color: #FEE98F;
+}
+
+.button--edit {
+	position: relative;
+	display: flex;
+	vertical-align: middle;
+	height: 30px;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	text-transform: none;
+	color: #353535;
+	margin-top: 38px;
+	margin-bottom: 20px;
+	transition: all .3s ease-in-out;
+	&:hover {
+		color: lighten(#353535, 30%);
+	}
+}
+
+.card--edit {
+	position: absolute;
+	top: 0;
+	left: -32px;
+}
+
+.button--delete {
+	display: flex;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #FF0C32;
+	text-transform: none;
+	transition: all .3s ease-in-out;
+	&:hover {
+		color: lighten(#FF0C32, 15%);
+	}
+}
+
+.button--cons, .button--ok {
+	font-size: 14px;
+	line-height: 17px;
+	color: #353535;
+	height: 50px;
+	transition: all .3s ease-in-out;
+}
+
+.button--cons {
+	width: 232px;
+	background-color: #FFEA89;
+	margin-right: 16px;
+	&:hover {
+		background-color: darken(#FFEA89, 15%);
+	}
+}
+
+.button--ok {
+	width: 190px;
+	background-color: #E9EAEC;
+	&:hover {
+		background-color: darken(#E9EAEC, 15%);
+	}
+}
+
+.button--approve {
+	font-size: 14px;
+	line-height: 17px;
+	color: #353535;
+	height: 50px;
+	background-color: #FFEA89;
+	width: 150px;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#FFEA89, 15%);
+	}
+}
+
+.button--refuse {
+	font-size: 14px;
+	line-height: 17px;
+	height: 49px;
+	color: #353535;
+	width: 150px;
+	border: 1px solid #DF2121;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: #DF2121;
+		color: #fff;
+	}
+}
+
+.button--create-job {
+	width: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0C2A4D;
+	color: #fff;
+	transition: all .3s ease-in-out;
+	span {
+		font-size: 32px;
+		font-weight: 300;
+		line-height: 38px;
+		color: #fff;
+		padding-right: 10px;
+	}
+	&:hover {
+		background-color: lighten(#0C2A4D, 15%);
+	}
+}
+
+.button--news {
+	width: 280px;
+	height: 50px;
+	background-color: #FEE98F;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #353535;
+	transition: all .3s ease-in-out;
+	&:hover {
+		background-color: darken(#FEE98F, 15%);
+	}
+}
+
+.btn--base-reviews {
+	outline: 0;
+	border: 0;
+	width: 211px;
+	height: auto;
+	line-height: normal;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	font-size: 14px;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #0C2A4D;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover, &:active, &:focus {
+		background-color: lighten(#0C2A4D, 10%);
+	}
+}
+
+.btn--base-add {
+	outline: 0;
+	border: 0;
+	width: 162px;
+	height: auto;
+	line-height: normal;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	letter-spacing: 1.1px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	text-transform: uppercase;
+	color: #373A3E;
+	background-color: #FEE98F;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover, &:active, &:focus {
+		background-color: lighten(#FEE98F, 10%);
+	}
+	span {
+		font-size: 28px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #373A3E;
+		margin-right: 14px;
+	}
+}
+
+.btn--base-submit {
+	outline: 0;
+	border: 0;
+	width: 155px;
+	height: auto;
+	line-height: normal;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: #373A3E;
+	background-color: #FEE98F;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover, &:active, &:focus {
+		background-color: lighten(#FEE98F, 10%);
+	}
+}
+
+.btn--base-cancel {
+	outline: 0;
+	border: 0;
+	background: 0;
+	height: auto;
+	width: 155px;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: #373A3E;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	&:hover, &:active, &:focus {
+		background-color: #FEE98F;
+	}
+}
+
+.btn--base-change {
+	outline: 0;
+	border: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	padding-top: 23px;
+	padding-bottom: 30px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #353535;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	background-color: #DDE5ED;
+}
+
+.btn--base-tariff {
+	outline: 0;
+	border: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 140px;
+	padding-top: 16px;
+	padding-bottom: 21px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #353535;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	background-color: #DDE5ED;
+	transition: all 0.3s ease-in-out;
+	&:hover, &:active, &:focus {
+		background-color: lighten(#DDE5ED, 10%);
+	}
+	&.active {
+		background-color: #FFCF00;
+	}
+	&.active:hover,
+	&.active:focus,
+	&.active:active {
+		background-color: lighten(#FFCF00, 10%);
+	}
+}

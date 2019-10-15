@@ -1,0 +1,446 @@
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="theme-color" content="#ff9800")
+		meta(name="msapplication-navbutton-color" content="#ff9800")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+		meta(name="apple-touch-fullscreen" content="yes")
+		link(rel="icon" type="image/x-icon" sizes="16x16" href="#")
+		link(rel="icon" type="image/x-icon" sizes="32x32" href="#")
+		link(rel="icon" type="image/png" sizes="50x50" href="#")
+		link(rel="icon" type="image/png" sizes="60x60" href="#")
+		link(rel="icon" type="image/png" sizes="72x72" href="#")
+		link(rel="icon" type="image/png" sizes="76x76" href="#")
+		link(rel="icon" type="image/png" sizes="114x114" href="#")
+		link(rel="icon" type="image/png" sizes="120x120" href="#")
+		link(rel="icon" type="image/png" sizes="144x144" href="#")
+		link(rel="icon" type="image/png" sizes="152x152" href="#")
+		meta(name="format-detection" content="telephone=no")
+		title Cinarta
+		link(rel="stylesheet" href="static/css/main.css")
+	body
+		svg(style="display:none")
+			symbol(id="caret-select" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg")
+				path(d="M11.7772 0.230869C11.6289 0.0769137 11.4531 0 11.2499 0H0.750056C0.546802 0 0.371088 0.0769137 0.222628 0.230869C0.0741683 0.384994 0 0.567212 0 0.777863C0 0.988471 0.0741683 1.17069 0.222628 1.32469L5.47257 6.76896C5.6212 6.92292 5.79691 7 6 7C6.20309 7 6.37897 6.92292 6.52731 6.76896L11.7772 1.32464C11.9255 1.17069 12 0.988471 12 0.77782C12 0.567212 11.9255 0.384994 11.7772 0.230869Z")
+			symbol(id="apple" width="19" height="23")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.974 0c.158 1.27-.423 2.542-1.284 3.459-.862.915-2.275 1.627-3.66 1.533-.187-1.244.512-2.54 1.31-3.352C11.23.725 12.735.044 13.975 0zm4.398 8.247c-.24.142-2.532 1.505-2.503 4.255.03 3.315 2.965 4.466 3.125 4.529l.006.002a2.286 2.286 0 0 0-.008.024c-.07.214-.541 1.665-1.608 3.162-.973 1.365-1.98 2.723-3.57 2.751-.765.014-1.275-.198-1.806-.418-.556-.231-1.133-.471-2.047-.471-.957 0-1.562.247-2.145.485-.504.207-.992.406-1.677.433-1.535.054-2.703-1.474-3.683-2.835C.45 17.384-1.081 12.306.976 8.878c1.02-1.702 2.847-2.78 4.827-2.808.855-.015 1.682.3 2.406.576.553.21 1.046.399 1.444.399.359 0 .839-.182 1.398-.394.881-.333 1.96-.741 3.07-.633.761.03 2.896.294 4.267 2.22a2.71 2.71 0 0 1-.017.01z" fill="#fff")
+			symbol(id="bubble" width="18" height="18")
+				path(d="M16.795 3.732C15.99 2.58 14.9 1.67 13.52 1.002 12.141.334 10.634 0 9 0 7.781 0 6.616.197 5.505.592c-1.112.394-2.07.927-2.873 1.599A7.65 7.65 0 0 0 .713 4.587 6.289 6.289 0 0 0 0 7.499C0 8.67.303 9.768.909 10.79c.606 1.023 1.435 1.883 2.486 2.578-.074.312-.16.61-.261.89-.1.281-.191.512-.271.692-.08.18-.19.379-.327.597a6.059 6.059 0 0 1-.311.463l-.347.445a39.981 39.981 0 0 0-.391.51l-.07.1-.061.105c-.034.059-.049.096-.045.11a.36.36 0 0 1-.02.118c-.017.063-.015.11.005.14v.012c.027.141.085.254.175.34.09.086.193.121.307.105a6.596 6.596 0 0 0 1.145-.257c1.754-.524 3.295-1.469 4.62-2.836.503.063.988.094 1.457.094 1.634 0 3.14-.334 4.52-1.002 1.38-.668 2.471-1.578 3.275-2.73C17.598 10.113 18 8.858 18 7.5c0-1.36-.402-2.615-1.205-3.767z")
+			symbol(id="android" width="21" height="24")
+				path(d="M1.531 8h-.063C.659 8 0 8.638 0 9.416v6.167C0 16.363.66 17 1.468 17h.064C2.341 17 3 16.362 3 15.583V9.416C2.999 8.638 2.339 8 1.531 8zM4 17.869c0 .726.58 1.317 1.29 1.317h1.378v3.376c0 .793.632 1.438 1.403 1.438h.06c.775 0 1.406-.646 1.406-1.438v-3.376h1.926v3.376c0 .793.634 1.438 1.405 1.438h.06c.774 0 1.404-.646 1.404-1.438v-3.376h1.38c.708 0 1.288-.591 1.288-1.317V8H4v9.869z" fill="#fff")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M13.715 1.961L14.802.344a.217.217 0 0 0-.067-.307.234.234 0 0 0-.32.065l-1.127 1.673a7.595 7.595 0 0 0-2.788-.522c-.998 0-1.941.188-2.789.522L6.586.102a.237.237 0 0 0-.321-.065.218.218 0 0 0-.068.307l1.088 1.617C5.323 2.887 4 4.633 4 6.635A4 4 0 0 0 4.019 7h12.963c.011-.12.018-.241.018-.365 0-2.002-1.324-3.748-3.285-4.674zm-6.22 2.895a.612.612 0 0 1-.624-.6c0-.333.28-.6.624-.6a.61.61 0 0 1 .624.6c0 .333-.28.6-.624.6zm5.385-.6c0 .333.28.6.624.6a.61.61 0 0 0 .623-.6.61.61 0 0 0-.623-.6.611.611 0 0 0-.624.6z" fill="#fff")
+				path(d="M19.531 8h-.061C18.661 8 18 8.638 18 9.416v6.167c0 .78.663 1.417 1.47 1.417h.062c.81 0 1.468-.638 1.468-1.417V9.416C21 8.638 20.34 8 19.531 8z" fill="#fff")
+			symbol(id="search" width="16" height="16")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M11.973 11.296l3.889 3.888a.48.48 0 0 1-.338.816.483.483 0 0 1-.337-.142l-3.889-3.888a6.797 6.797 0 0 1-4.474 1.674C3.062 13.644 0 10.583 0 6.822A6.83 6.83 0 0 1 6.824 0c3.761 0 6.823 3.058 6.823 6.822 0 1.71-.631 3.275-1.675 4.474zM6.82.958A5.871 5.871 0 0 0 .955 6.822 5.874 5.874 0 0 0 6.82 12.69a5.874 5.874 0 0 0 5.866-5.868A5.871 5.871 0 0 0 6.82.958z" fill="#000")
+			symbol(id="whatsapp" width="30" height="30")
+				path(d="M15.004 0C6.726 0 0 6.728 0 15c0 3.281 1.058 6.323 2.856 8.792l-1.87 5.572 5.766-1.843A14.87 14.87 0 0 0 15.004 30C23.274 30 30 23.27 30 15S23.274 0 15.004 0z" fill="#4CAF50")
+				path(d="M24.66 19.855c-.387.989-1.923 1.809-3.148 2.048-.838.162-1.933.29-5.62-1.092-4.714-1.767-7.75-6.1-7.987-6.381C7.68 14.149 6 12.135 6 10.053 6 7.97 7.17 6.956 7.64 6.52 8.027 6.163 8.667 6 9.28 6c.2 0 .378.01.538.016.472.018.708.044 1.02.717.386.843 1.329 2.926 1.441 3.14.114.214.229.504.068.785-.15.29-.283.42-.52.666-.236.247-.46.435-.697.7-.217.23-.461.477-.189.904.273.417 1.216 1.808 2.603 2.926 1.791 1.442 3.243 1.902 3.762 2.098.388.145.849.111 1.132-.161.359-.35.802-.93 1.253-1.502.32-.41.726-.46 1.151-.316.433.136 2.725 1.161 3.197 1.374.471.214.782.315.896.495.112.18.112 1.023-.275 2.013z" fill="#FAFAFA")
+			symbol(id="sort-list" width="22" height="17" viewBox="0 0 22 17")
+				path(d="M2.829 6.635a2.1 2.1 0 0 0-1.543.635 2.1 2.1 0 0 0-.635 1.543 2.1 2.1 0 0 0 .636 1.542 2.1 2.1 0 0 0 1.542.635 2.1 2.1 0 0 0 1.542-.635 2.1 2.1 0 0 0 .636-1.542A2.1 2.1 0 0 0 4.37 7.27a2.1 2.1 0 0 0-1.542-.635zM2.829.828a2.1 2.1 0 0 0-1.543.635 2.1 2.1 0 0 0-.635 1.543 2.1 2.1 0 0 0 .635 1.542 2.1 2.1 0 0 0 1.543.635 2.1 2.1 0 0 0 1.542-.635 2.1 2.1 0 0 0 .635-1.542 2.1 2.1 0 0 0-.635-1.543A2.1 2.1 0 0 0 2.83.828zM2.829 12.442a2.1 2.1 0 0 0-1.543.635 2.1 2.1 0 0 0-.635 1.542 2.1 2.1 0 0 0 .635 1.543 2.1 2.1 0 0 0 1.543.635 2.1 2.1 0 0 0 1.542-.635 2.1 2.1 0 0 0 .635-1.543 2.1 2.1 0 0 0-.635-1.542 2.1 2.1 0 0 0-1.542-.635zM21.867 1.662a.35.35 0 0 0-.255-.108H7.82a.349.349 0 0 0-.255.108.35.35 0 0 0-.108.255v2.178a.35.35 0 0 0 .108.255.35.35 0 0 0 .255.107h13.79a.35.35 0 0 0 .256-.107.349.349 0 0 0 .108-.255V1.917a.35.35 0 0 0-.108-.255zM21.612 7.361H7.82a.348.348 0 0 0-.255.108.349.349 0 0 0-.108.255V9.9c0 .099.036.184.108.255a.348.348 0 0 0 .255.108h13.79a.348.348 0 0 0 .256-.107.348.348 0 0 0 .108-.256V7.724a.349.349 0 0 0-.108-.255.35.35 0 0 0-.255-.108zM21.612 13.168H7.82a.348.348 0 0 0-.255.107.349.349 0 0 0-.108.255v2.178a.35.35 0 0 0 .108.255.349.349 0 0 0 .255.108h13.79a.35.35 0 0 0 .256-.108.349.349 0 0 0 .108-.255V13.53a.349.349 0 0 0-.108-.255.35.35 0 0 0-.255-.107z")
+			symbol(id="arrow-page" width="20" height="7")
+				path(d="M0 2.62h18.788v1.537H0z")
+				path(d="M17.084.472l2.571 2.57-1.087 1.088-2.57-2.571z")
+				path(d="M15.998 5.216l2.57-2.57 1.088 1.086-2.571 2.57z")
+			symbol(id="sort-card" width="20" height="18" viewBox="0 0 20 18")
+				rect(width="4" height="4")
+				rect(y="7" width="4" height="4")
+				rect(y="14" width="4" height="4")
+				rect(x="8" width="4" height="4")
+				rect(x="8" y="7" width="4" height="4")
+				rect(x="8" y="14" width="4" height="4")
+				rect(x="16" width="4" height="4")
+				rect(x="16" y="7" width="4" height="4")
+				rect(x="16" y="14" width="4" height="4")
+			symbol(id="email" width="38" height="35")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M37.718 14.498l-4.852-3.195V.625a.627.627 0 0 0-.63-.625H5.763c-.347 0-.629.28-.629.625v10.68L.282 14.497A.623.623 0 0 0 0 15.02v19.356c0 .345.282.625.63.625h36.74c.348 0 .63-.28.63-.625V15.019a.623.623 0 0 0-.282-.52zM5.133 16.684l-1.974-1.04h1.974v1.04zm10.599 6.999L1.259 16.058V33.21l14.473-9.527zM19 23.03L35.282 33.75H2.717L19 23.03zm17.741-6.973l-14.473 7.625L36.74 33.21V16.058zm-3.875-.414h1.975l-1.975 1.04v-1.04zm0-1.25h2.416l-2.416-1.59v1.59zM31.607 1.25v16.098l-10.533 5.549-1.727-1.137a.633.633 0 0 0-.695 0l-1.726 1.136-10.534-5.549V1.25h25.215zM2.717 14.394h2.416v-1.59l-2.415 1.59z" fill="#000")
+				path(fill-rule="evenodd" clip-rule="evenodd" d="M23.387 16H18.5c-3.033 0-5.5-2.427-5.5-5.411v-.178C13 7.427 15.467 5 18.5 5S24 7.427 24 10.41v.446c0 1.167-.965 2.117-2.152 2.117a2.16 2.16 0 0 1-1.83-1.004 2.662 2.662 0 0 1-1.744.648c-1.461 0-2.65-1.17-2.65-2.607 0-1.437 1.189-2.606 2.65-2.606 1.46 0 2.65 1.17 2.65 2.606v.846c0 .502.414.91.924.91s.925-.408.925-.91v-.445c0-2.318-1.917-4.204-4.273-4.204s-4.273 1.886-4.273 4.204v.178c0 2.318 1.917 4.204 4.273 4.204h4.887c.338 0 .613.27.613.604a.608.608 0 0 1-.613.603zm-6.536-5.99c0 .772.638 1.4 1.423 1.4.784 0 1.422-.628 1.422-1.4 0-.771-.638-1.4-1.422-1.4-.785 0-1.423.629-1.423 1.4z" fill="#000")
+		header#header.page-header
+			.wrapper
+				.page-header__row
+					.page-header__logo
+						a(href="index.html")
+							img(src="static/img/cinarta.svg", alt="Cinarta")
+					nav.page-header__nav
+						ul.page__list
+							li.active
+								a(href="casting.html") Кастинги
+							li
+								a(href="cinema.html") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="partners.html") Партнеры
+							li
+								a(href="#") Обратная связь
+					a.page-header__toggle(href="#" data-toggle="modal" data-target="#header-menu")
+						span
+					.page-header__user-wrapper
+						a.notifications-link(href="#")
+							svg.bubble--icon(width="18" height="18")
+								use(xlink:href="#bubble")
+							span.buble-number 4
+						button.button.button--exit(type="button" data-jq-dropdown="#jq-dropdown-1")
+							.page-header__user
+								.user__photo
+									img(src="static/img/katya.png", alt="")
+								span.user__name Екатерина 
+									br
+									| Тутубалина
+								svg.exit--icon(width="12" height="7")
+									use(xlink:href="#caret-select")
+						#jq-dropdown-1.jq-dropdown.jq-dropdown-tip.jq-dropdown-relative.jq-dropdown-anchor-right
+							.jq-dropdown-menu.page-header__user-menu
+								a(href="activation.html") Подписка
+								a(href="profile_info.html") Мой профиль
+								a(href="#") Настройки
+								a(href="#") Помощь
+								a(href="#") Выйти
+			.page-header__menu.popup-block#header-menu
+				.inner__menu
+					a.page-header__toggle.close-button(href="#" data-toggle="dismiss")
+						span
+					nav.page-header__nav
+						ul.page__list
+							li
+								a(href="casting.html") Кастинги
+							li
+								a(href="cinema.html") Киносфера
+							li
+								a(href="#") Вакансии
+							li
+								a(href="#") Приложение
+							li
+								a(href="#") Обратная связь
+		.main-page-wrap
+			.main-page-blocks
+				section.casting
+					.wrapper
+						.breadcrumbs
+							ul.page__list
+								li
+									a(href="#") Главная
+								li
+									span Кастинги
+						.casting__heading
+							h1 Кастинги
+							a.casting__link(href="#") Мои кастинги
+						.casting__search
+							.selects
+								.select__wrapper
+									select.country.nice-select
+										option(value="" selected disabled hidden) Выберите страну
+										option(value="") Польша
+										option(value="") Сингапур
+										option(value="") Таиланд
+										option(value="") Исландия
+								.select__wrapper
+									select.city.nice-select
+										option(value="" selected disabled hidden) Выберите город
+										option(value="") Киев
+										option(value="") Москва
+										option(value="") Варшава
+										option(value="") Бердянск
+								.select__wrapper
+									select.nice-select
+										option(value="" selected disabled hidden) Тип проекта
+										option(value="") Короткометражный фильм
+										option(value="") Фильм
+										option(value="") Сцена
+										option(value="") Дубль
+							.casting__search-block
+								button.button.button--main(type="button") Искать
+									svg.search--icon(width="16" height="16")
+										use(xlink:href="#search")
+								a.search__reset(href="#") Сбросить все
+						.casting__container
+							button.button.button--create-casting(type="button") Создать кастинг
+							.casting__sort-block
+								button.button.active(type="button" data-toggle="tab" data-target="#casting-tab-1")
+									svg(width="20" height="18")
+										use(xlink:href="#sort-card")
+								button.button(type="button" data-toggle="tab" data-target="#casting-tab-2")
+									svg(width="22" height="17")
+										use(xlink:href="#sort-list")
+						.casting__tab-content.active#casting-tab-1
+							.casting__row
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/alex.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+										svg.casting--whatsapp(width="30" height="30")
+											use(xlink:href="#whatsapp")
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/ryan.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/alex.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+										svg.casting--whatsapp(width="30" height="30")
+											use(xlink:href="#whatsapp")
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/ryan.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/alex.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+										svg.casting--whatsapp(width="30" height="30")
+											use(xlink:href="#whatsapp")
+								.casting__row-block
+									.casting__row-photo
+										a(href="#")
+											img(src="static/img/ryan.jpg", alt="")
+									.casting__row-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										.casting-card__bottom-info
+											p.page__text В короткометражный фильм под названием "Костер" нужны проф. актрисы. Возраст 23-...
+											p.page__text.casting__price Гонорар:
+												span.casting__num 5000 руб/съемка
+											.casting__wrapper
+												span.page__text Москва (Россия)
+												span.page__text до 10 февраля 2019 г.
+						.casting__tab-content#casting-tab-2
+							.casting__list
+								.casting__list-block
+									.casting__list-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__list-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										p.page__text Кастинг МОСКВА главная роль. Для съемок в федеральном рекламном ролике продукта питания. Дата съемки 16 е число: Девушка 20 - 30 лет…
+										p.page__text.casting__price Гонорар:
+											span.casting__num 5000 руб/съемка
+										.casting__wrapper
+											span.page__text Москва (Россия)
+											span.page__text до 10 февраля 2019 г.
+									svg.casting--whatsapp(width="30" height="30")
+										use(xlink:href="#whatsapp")
+								.casting__list-block
+									.casting__list-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__list-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										p.page__text Кастинг МОСКВА главная роль. Для съемок в федеральном рекламном ролике продукта питания. Дата съемки 16 е число: Девушка 20 - 30 лет…
+										p.page__text.casting__price Гонорар:
+											span.casting__num 5000 руб/съемка
+										.casting__wrapper
+											span.page__text Москва (Россия)
+											span.page__text до 10 февраля 2019 г.
+									svg.casting--whatsapp(width="30" height="30")
+										use(xlink:href="#whatsapp")
+								.casting__list-block
+									.casting__list-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__list-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										p.page__text Кастинг МОСКВА главная роль. Для съемок в федеральном рекламном ролике продукта питания. Дата съемки 16 е число: Девушка 20 - 30 лет…
+										p.page__text.casting__price Гонорар:
+											span.casting__num 5000 руб/съемка
+										.casting__wrapper
+											span.page__text Москва (Россия)
+											span.page__text до 10 февраля 2019 г.
+									svg.casting--whatsapp(width="38" height="35")
+										use(xlink:href="#email")
+								.casting__list-block
+									.casting__list-photo
+										a(href="#")
+											img(src="static/img/alina.jpg", alt="")
+									.casting__list-body
+										a.casting__title(href="#") Короткометражный фильм
+										span.page__desc Непроверенный кастинг директор
+										p.casting__type Тип проекта: 
+											a.casting__type-film(href="#") Короткометражный фильм
+										p.page__text Кастинг МОСКВА главная роль. Для съемок в федеральном рекламном ролике продукта питания. Дата съемки 16 е число: Девушка 20 - 30 лет…
+										p.page__text.casting__price Гонорар:
+											span.casting__num 5000 руб/съемка
+										.casting__wrapper
+											span.page__text Москва (Россия)
+											span.page__text до 10 февраля 2019 г.
+						.links-block
+							a(href="#")
+								svg.links__arrow-left(width="20" height="7")
+									use(xlink:href="#arrow-page")
+							ul.page__list.links__list
+								li
+									span.links__item.links__item--active(href="#") 1
+								li
+									a.links__item(href="#") 2
+								li
+									a.links__item(href="#") 3
+								li
+									a.links__item(href="#") 4
+								li
+									span.links__item(href="#") ...
+								li
+									a.links__item(href="#") 11
+							a(href="#")
+								svg.links__arrow-right(width="20" height="7")
+									use(xlink:href="#arrow-page")
+			footer.main-footer
+				.wrapper
+					.main-footer__container
+						.main-footer__content
+							.footer__box
+								img(src="static/img/footer_cinarta.svg", alt="Логотип")
+								p.copyright__text © 2018, «Синарта» поиск исполнителей
+							.footer__box
+								span.app__title Скачать приложение
+								.apps__box
+									a.apps__link(href="#")
+										svg(width="19" height="23")
+											use(xlink:href="#apple")
+									a.apps__link(href="#")
+										svg(width="21" height="24")
+											use(xlink:href="#android")
+								a.footer__link(href="#") Пользовательськое соглашение
+								a.footer__link(href="#") Политика конфиденциальности
+						.footer__box
+							a.footer__main-link(href="#") Мой профиль
+							a.footer__link(href="entrance.html") Вход
+							a.footer__link(href="#") Вакансии
+							a.footer__link(href="#") Сообщения
+							a.footer__link(href="casting.html") Кастинги
+						.footer__box
+							a.footer__main-link(href="#") Найти исполнителя
+							a.footer__link(href="#") Создать вакансию
+							a.footer__link(href="actors_list.html") Найти актера
+							a.footer__link(href="create_casting.html") Создать кастинг
+							a.footer__link(href="cinema.html") Киносфера
+						.footer__box
+							a.footer__main-link(href="#") Сервисы
+							a.footer__link(href="#") Поиск по сайту
+							a.footer__link(href="#") Помощь
+							a.footer__link(href="#") Обратная связь
+	script(src="static/js/jquery-3.3.1.min.js")
+	script(src="static/js/plugins.js")
+	script(src="static/js/jquery.dropdown.min.js")
+	script(src="static/js/main.js")
