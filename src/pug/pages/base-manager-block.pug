@@ -111,20 +111,22 @@ html(lang="ru-RU")
 							.base-block__sidebar-block
 								ul
 									li
-										a(href="#") Управление
+										a(href="base-control-block.html") Управление
 									li
 										a(href="#") Просмотр
 									li
 										a(href="#") Редактировать
-									li
-										a(href="#") Менеджеры
+									li.active
+										a(href="base-manager-block.html") Менеджеры
 									li
 										a(href="#") Новости
 									li
-										a(href="#") Проекты
+										a(href="base-project-block.html") Проекты
 									li
 										a(href="#") Удалить
 							.base-block__content-block
+								a.base-block__back-link(href="javascript:;")
+									img(src="static/img/actor-small-arrow.svg", alt="")
 								.base-block__control-block
 									.base-block__control-heading
 										.base-block__control-title Менеджеры

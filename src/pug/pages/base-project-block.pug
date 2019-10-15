@@ -113,24 +113,26 @@ html(lang="ru-RU")
 							.base-block__sidebar-block
 								ul
 									li
-										a(href="#") Управление
+										a(href="base-control-block.html") Управление
 									li
 										a(href="#") Просмотр
 									li
 										a(href="#") Редактировать
 									li
-										a(href="#") Менеджеры
+										a(href="base-manager-block.html") Менеджеры
 									li
 										a(href="#") Новости
-									li
-										a(href="#") Проекты
+									li.active
+										a(href="base-project-block.html") Проекты
 									li
 										a(href="#") Удалить
 							.base-block__content-block
+								a.base-block__back-link(href="javascript:;")
+									img(src="static/img/actor-small-arrow.svg", alt="")
 								.base-block__project-block
 									.base-block__project-heading
 										.base-block__project-title Проекты
-										a.btn.btn--base-add(href="javascript:;") 
+										a.btn.btn--base-add(href="javascript:;" data-toggle="base-tab" data-target="#base-tab-1") 
 											span + 
 											| Добавить
 									.base-block__project-table
@@ -169,6 +171,27 @@ html(lang="ru-RU")
 												a.base-block__project-delete-link(href="javascript:;")
 													svg(width="17" height="21")
 														use(xlink:href="#base_delete")
+								.base-block__tab-content#base-tab-1
+									.base-block__create-block
+										.base-block__create-heading
+											.base-block__create-title Создать проект
+										.base-block__create-inner
+											.base-block__create-control-wrapper
+												.base-block__create-left-part
+													label Название 
+														span *
+												.base-block__create-right-part
+													input.form-input(type="text" placeholder="Название проекта")
+											.base-block__create-control-wrapper
+												.base-block__create-left-part
+													label Длительность карантина 
+														span *
+												.base-block__create-right-part.small
+													input.form-input(type="text" placeholder="90")
+													.base-block__create-label дней
+										.base-block__create-btn-wrapper
+											a.btn.btn--base-submit(href="javascript:;") Создать
+											a.btn.btn--base-cancel(href="javascript:;") Отменить
 			footer.main-footer
 				.wrapper
 					.main-footer__container

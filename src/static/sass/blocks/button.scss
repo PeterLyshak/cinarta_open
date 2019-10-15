@@ -129,10 +129,10 @@
 	&::after {
 		content: '';
 		position: absolute;
-		top: 1px;
+		top: 4px;
 		right: 0;
-		width: 9px;
-		height: 14px;
+		width: 14px;
+		height: 9px;
 		transform: rotate(180deg);
 		background-image: url('../img/create-form-arrow.svg');
 		background-position: center center;
@@ -461,6 +461,10 @@
 		text-transform: uppercase;
 		color: #373A3E;
 		margin-right: 14px;
+	}
+	&.active {
+		display: flex;
+		flex-direction: row;
 	}
 }
 

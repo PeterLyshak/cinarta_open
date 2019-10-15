@@ -239,6 +239,20 @@ $('[data-toggle="specialization-tab"]').click(function(e) {
  $(thisTarget).addClass('active').siblings().removeClass('active');
 });
 
+$('[data-toggle="base-tab"]').click(function(e) {
+ e.preventDefault();
+ 
+ var thisTarget = $(this).attr('data-target');
+ 
+ if ($(this).parent().is('li')) {
+  $(this).parent().addClass('active').siblings().removeClass('active');
+ } else {
+  $(this).addClass('active').siblings().removeClass('active');
+ }
+ 
+ $(thisTarget).addClass('active').siblings().removeClass('active');
+});
+
 $('.create-casting-new__arrow-right').on('click', function(e) {
   e.preventDefault();
   var currentTab = $('.create-casting-new__tab-content.active');

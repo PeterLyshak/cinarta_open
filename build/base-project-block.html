@@ -107,19 +107,19 @@
             <div class="base-block__wrapper">
               <div class="base-block__sidebar-block">
                 <ul>
-                  <li><a href="#">Управление</a></li>
+                  <li><a href="base-control-block.html">Управление</a></li>
                   <li><a href="#">Просмотр</a></li>
                   <li><a href="#">Редактировать</a></li>
-                  <li><a href="#">Менеджеры</a></li>
+                  <li><a href="base-manager-block.html">Менеджеры</a></li>
                   <li><a href="#">Новости</a></li>
-                  <li><a href="#">Проекты</a></li>
+                  <li class="active"><a href="base-project-block.html">Проекты</a></li>
                   <li><a href="#">Удалить</a></li>
                 </ul>
               </div>
-              <div class="base-block__content-block">
+              <div class="base-block__content-block"><a class="base-block__back-link" href="javascript:;"><img src="static/img/actor-small-arrow.svg" alt=""></a>
                 <div class="base-block__project-block">
                   <div class="base-block__project-heading">
-                    <div class="base-block__project-title">Проекты</div><a class="btn btn--base-add" href="javascript:;"> <span>+ </span>Добавить</a>
+                    <div class="base-block__project-title">Проекты</div><a class="btn btn--base-add" href="javascript:;" data-toggle="base-tab" data-target="#base-tab-1"> <span>+ </span>Добавить</a>
                   </div>
                   <div class="base-block__project-table">
                     <div class="base-block__project-table-heading">
@@ -160,6 +160,33 @@
                             <use xlink:href="#base_delete"></use>
                           </svg></a></div>
                     </div>
+                  </div>
+                </div>
+                <div class="base-block__tab-content" id="base-tab-1">
+                  <div class="base-block__create-block">
+                    <div class="base-block__create-heading">
+                      <div class="base-block__create-title">Создать проект</div>
+                    </div>
+                    <div class="base-block__create-inner">
+                      <div class="base-block__create-control-wrapper">
+                        <div class="base-block__create-left-part">
+                          <label>Название <span>*</span></label>
+                        </div>
+                        <div class="base-block__create-right-part">
+                          <input class="form-input" type="text" placeholder="Название проекта">
+                        </div>
+                      </div>
+                      <div class="base-block__create-control-wrapper">
+                        <div class="base-block__create-left-part">
+                          <label>Длительность карантина <span>*</span></label>
+                        </div>
+                        <div class="base-block__create-right-part small">
+                          <input class="form-input" type="text" placeholder="90">
+                          <div class="base-block__create-label">дней</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="base-block__create-btn-wrapper"><a class="btn btn--base-submit" href="javascript:;">Создать</a><a class="btn btn--base-cancel" href="javascript:;">Отменить</a></div>
                   </div>
                 </div>
               </div>

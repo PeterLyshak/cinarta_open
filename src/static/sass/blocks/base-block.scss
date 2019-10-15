@@ -74,11 +74,32 @@
 		}
 	}
 	&__content-block {
+		position: relative;
 		display: block;
 		width: 100%;
 		max-width: 960px;
 	}
+	&__back-link {
+		position: absolute;
+		top: 20px;
+		left: 15px;
+		display: block;
+		width: 25px;
+		height: 25px;
+		padding: 15px;
+		border: 1px solid #212425;
+		border-radius: 50%;
+		z-index: 10;
+		img {
+			position: absolute;
+			width: 8px;
+			height: 14px;
+			top: 8px;
+			left: 10px;
+		}
+	}
 	&__manager-block {
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -218,6 +239,7 @@
 		color: #2E3032;	
 	}
 	&__tariff-block {
+		position: relative;
 		display: block;
 		width: 100%;
 		padding-top: 55px;
@@ -461,6 +483,7 @@
 		opacity: 1;
 	}
 	&__control-block {
+		position: relative;
 		display: block;
 		width: 100%;
 		padding-top: 55px;
@@ -548,9 +571,17 @@
 		display: block;
 		margin-left: 37px;
 	}
+	&__tab-content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
 	&__project-block {
+		position: relative;
 		display: block;
 		width: 100%;
+		margin-bottom: 60px;
 		padding-top: 55px;
 		padding-left: 67px;
 		padding-right: 61px;
@@ -638,6 +669,7 @@
 		max-width: 100px;
 	}
 	&__create-block {
+		position: relative;
 		display: block;
 		width: 100%;
 		padding-top: 55px;
@@ -884,6 +916,11 @@
 		&__create-left-part {
 			margin-bottom: 15px;
 		}
+		&__back-link {
+			top: 25px;
+			right: 20px;
+			left: auto;
+		}
 	}
 }
 
@@ -915,7 +952,10 @@
 			padding-bottom: 23px;
 		}
 		&__tariff-block {
-			padding: 30px;
+			padding-top: 70px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
 		}
 		&__tariff-card {
 			max-width: 213px;
@@ -936,7 +976,10 @@
 			display: block;
 		}
 		&__control-block {
-			padding: 30px;
+			padding-top: 80px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
 		}
 		&__control-table {
 			position: relative;
@@ -951,7 +994,10 @@
 			font-size: 14px;
 		}
 		&__project-block {
-			padding: 30px 15px;
+			padding-top: 60px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
 		}
 		&__project-table-heading, &__project-table-inner {
 			padding-left: 15px;
@@ -973,7 +1019,10 @@
 			font-size: 14px;
 		}
 		&__create-block {
-			padding: 30px;
+			padding-top: 60px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
 		}
 		&__create-control-wrapper:first-child {
 			display: block;
