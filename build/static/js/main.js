@@ -99,42 +99,35 @@ $('[type="tel"]').inputmask({
     removeMaskOnSubmit: !1
 }), 
 
-$("form").each(function(e) {
+$.extend($.validator.messages, {
+    required: "Ошибка, некорректные данные",
+    email: "Ошибка, некорректные данные",
+});
+
+$("form").each(function() {
     $(this).validate({
+        errorPlacement: function(e, i) {
+              e.addClass("error-message"),
+              e.appendTo(i.parent("div"))
+        },
+        highlight: function(e) {
+            $(e).addClass("has-error").parent().addClass("has-error");
+        },
+        unhighlight: function(e) {
+            $(e).removeClass("has-error").parent().removeClass("has-error");
+        },
+        ignore: [],
         rules: {
-            name: {
+            name: "required",
+            tel: {
                 required: !0
             },
-            tel: "required",
-            email: "required"
+            email: {
+                required: !0,
+                email: true
+            }
         },
-        highlight: function(e, t) {
-            $(e).parent().addClass(t)
-        },
-        unhighlight: function(e, t) {
-            $(e).parent().removeClass(t)
-        },
-        messages: {
-            name: {
-                required: "\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435"
-            },
-            tel: "\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435",
-            email: "\u042d\u0442\u043e \u043f\u043e\u043b\u0435 \u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435"
-        }
-    })
-}), $("form").submit(function(e) {
-    var t = $(this);
-    if ($(t).valid()) return $.ajax({
-        type: "POST",
-        url: "/mail.php",
-        data: t.serialize(),
-        success: function(e) {
-            showThanksModal()
-        },
-        error: function(e, t, o) {
-            alert(o)
-        }
-    }), !1
+    });
 });
 
 $('.questions__heading').click( function () {
@@ -251,6 +244,13 @@ $('[data-toggle="base-tab"]').click(function(e) {
  }
  
  $(thisTarget).addClass('active').siblings().removeClass('active');
+ $('.base-block__project-block').addClass('active');
+ $('.base-block__create-block').removeClass('active');
+});
+
+$('.base-block__back-link').on('click', function() {
+  $('.base-block__create-block').addClass('active');
+  $('.base-block__project-block').removeClass('active');
 });
 
 $('.create-casting-new__arrow-right').on('click', function(e) {

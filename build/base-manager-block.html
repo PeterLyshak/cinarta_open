@@ -113,14 +113,15 @@
                   <li><a href="#">Удалить</a></li>
                 </ul>
               </div>
-              <div class="base-block__content-block"><a class="base-block__back-link" href="javascript:;"><img src="static/img/actor-small-arrow.svg" alt=""></a>
+              <div class="base-block__content-block">
                 <div class="base-block__control-block">
                   <div class="base-block__control-heading">
                     <div class="base-block__control-title">Менеджеры</div>
                     <form class="base-block__control-form">
                       <div class="base-block__input-wrapper">
-                        <input class="form-input" type="text" name="control_id" placeholder="ID пользователя">
-                      </div><a class="btn btn--base-add" href="javascript:;">Добавить</a>
+                        <input class="form-input" type="text" name="control_id" placeholder="ID пользователя" required>
+                      </div>
+                      <button class="btn btn--base-add" type="submit">Добавить</button>
                     </form>
                   </div>
                   <div class="base-block__control-table">
@@ -261,5 +262,6 @@
   <script src="static/js/jquery-3.3.1.min.js"></script>
   <script src="static/js/plugins.js"></script>
   <script src="static/js/jquery.dropdown.min.js"></script>
+  <script src="static/js/jquery.validate.js"></script>
   <script src="static/js/main.js"></script>
 </html>

@@ -125,15 +125,13 @@ html(lang="ru-RU")
 									li
 										a(href="#") Удалить
 							.base-block__content-block
-								a.base-block__back-link(href="javascript:;")
-									img(src="static/img/actor-small-arrow.svg", alt="")
 								.base-block__control-block
 									.base-block__control-heading
 										.base-block__control-title Менеджеры
 										form.base-block__control-form
 											.base-block__input-wrapper
-												input.form-input(type="text" name="control_id" placeholder="ID пользователя")
-											a.btn.btn--base-add(href="javascript:;") Добавить
+												input.form-input(type="text" name="control_id" placeholder="ID пользователя" required)
+											button.btn.btn--base-add(type="submit") Добавить
 									.base-block__control-table
 										.base-block__control-table-heading
 											.base-block__control-heading-name Имя
@@ -246,4 +244,5 @@ html(lang="ru-RU")
 	script(src="static/js/jquery-3.3.1.min.js")
 	script(src="static/js/plugins.js")
 	script(src="static/js/jquery.dropdown.min.js")
+	script(src="static/js/jquery.validate.js")
 	script(src="static/js/main.js")

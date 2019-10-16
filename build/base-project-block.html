@@ -116,7 +116,7 @@
                   <li><a href="#">Удалить</a></li>
                 </ul>
               </div>
-              <div class="base-block__content-block"><a class="base-block__back-link" href="javascript:;"><img src="static/img/actor-small-arrow.svg" alt=""></a>
+              <div class="base-block__content-block">
                 <div class="base-block__project-block">
                   <div class="base-block__project-heading">
                     <div class="base-block__project-title">Проекты</div><a class="btn btn--base-add" href="javascript:;" data-toggle="base-tab" data-target="#base-tab-1"> <span>+ </span>Добавить</a>
@@ -163,7 +163,7 @@
                   </div>
                 </div>
                 <div class="base-block__tab-content" id="base-tab-1">
-                  <div class="base-block__create-block">
+                  <form class="base-block__create-block"><a class="base-block__back-link" href="javascript:;"><img src="static/img/actor-small-arrow.svg" alt=""></a>
                     <div class="base-block__create-heading">
                       <div class="base-block__create-title">Создать проект</div>
                     </div>
@@ -173,7 +173,9 @@
                           <label>Название <span>*</span></label>
                         </div>
                         <div class="base-block__create-right-part">
-                          <input class="form-input" type="text" placeholder="Название проекта">
+                          <div class="base-block__create-input-wrapper">
+                            <input class="form-input" type="text" name="create_name" placeholder="Название проекта" required>
+                          </div>
                         </div>
                       </div>
                       <div class="base-block__create-control-wrapper">
@@ -181,13 +183,18 @@
                           <label>Длительность карантина <span>*</span></label>
                         </div>
                         <div class="base-block__create-right-part small">
-                          <input class="form-input" type="text" placeholder="90">
+                          <div class="base-block__create-input-wrapper">
+                            <input class="form-input" type="text" name="create_days" placeholder="90" required>
+                          </div>
                           <div class="base-block__create-label">дней</div>
                         </div>
                       </div>
                     </div>
-                    <div class="base-block__create-btn-wrapper"><a class="btn btn--base-submit" href="javascript:;">Создать</a><a class="btn btn--base-cancel" href="javascript:;">Отменить</a></div>
-                  </div>
+                    <div class="base-block__create-btn-wrapper">
+                      <button class="btn btn--base-submit" type="submit">Создать</button>
+                      <button class="btn btn--base-cancel" type="submit">Отменить</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -222,5 +229,6 @@
   <script src="static/js/jquery-3.3.1.min.js"></script>
   <script src="static/js/plugins.js"></script>
   <script src="static/js/jquery.dropdown.min.js"></script>
+  <script src="static/js/jquery.validate.js"></script>
   <script src="static/js/main.js"></script>
 </html>

@@ -127,8 +127,6 @@ html(lang="ru-RU")
 									li
 										a(href="#") Удалить
 							.base-block__content-block
-								a.base-block__back-link(href="javascript:;")
-									img(src="static/img/actor-small-arrow.svg", alt="")
 								.base-block__project-block
 									.base-block__project-heading
 										.base-block__project-title Проекты
@@ -172,7 +170,9 @@ html(lang="ru-RU")
 													svg(width="17" height="21")
 														use(xlink:href="#base_delete")
 								.base-block__tab-content#base-tab-1
-									.base-block__create-block
+									form.base-block__create-block
+										a.base-block__back-link(href="javascript:;")
+											img(src="static/img/actor-small-arrow.svg", alt="")
 										.base-block__create-heading
 											.base-block__create-title Создать проект
 										.base-block__create-inner
@@ -181,17 +181,19 @@ html(lang="ru-RU")
 													label Название 
 														span *
 												.base-block__create-right-part
-													input.form-input(type="text" placeholder="Название проекта")
+													.base-block__create-input-wrapper
+														input.form-input(type="text" name="create_name" placeholder="Название проекта" required)
 											.base-block__create-control-wrapper
 												.base-block__create-left-part
 													label Длительность карантина 
 														span *
 												.base-block__create-right-part.small
-													input.form-input(type="text" placeholder="90")
+													.base-block__create-input-wrapper
+														input.form-input(type="text" name="create_days" placeholder="90" required)
 													.base-block__create-label дней
 										.base-block__create-btn-wrapper
-											a.btn.btn--base-submit(href="javascript:;") Создать
-											a.btn.btn--base-cancel(href="javascript:;") Отменить
+											button.btn.btn--base-submit(type="submit") Создать
+											button.btn.btn--base-cancel(type="submit") Отменить
 			footer.main-footer
 				.wrapper
 					.main-footer__container
@@ -230,4 +232,5 @@ html(lang="ru-RU")
 	script(src="static/js/jquery-3.3.1.min.js")
 	script(src="static/js/plugins.js")
 	script(src="static/js/jquery.dropdown.min.js")
+	script(src="static/js/jquery.validate.js")
 	script(src="static/js/main.js")
